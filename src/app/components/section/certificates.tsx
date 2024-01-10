@@ -1,10 +1,10 @@
 import React from 'react'
 
-const certificates = () => {
+const Certificates = () => {
   return (
-    <div>
-        certificates</div>
+    <h1>Certificates</h1>
+
   )
 }
 
-export default certificates
+export default Certificates
