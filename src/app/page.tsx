@@ -1,12 +1,12 @@
 import React from 'react'
-import Header from './components/Header'
-import Hero from './components/section/Hero'
-import Footer from './components/Footer'
+import Main from '@/components/section/Main'
 
 const page = () => {
   return (
-        <Hero />
-  )
+
+    <Main />
+
+    )
 }
 
 export default page
