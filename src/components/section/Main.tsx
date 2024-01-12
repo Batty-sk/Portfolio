@@ -1,3 +1,4 @@
+"use client"
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import React from 'react'
 import Hero from './Hero'
