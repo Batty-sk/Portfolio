@@ -4,6 +4,12 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 animation-duration: 7000ms;
 }
+#sea{
+/* animation-name: wave;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+animation-duration: 5000ms; */
+}
 
 @keyframes rotate{
     from{
@@ -11,5 +17,13 @@ animation-duration: 7000ms;
     }
     to{
         transform: rotate(360deg);
+    }
+}
+@keyframes wave{
+    from{
+        top:0px
+    }
+    to{
+        top:50px;
     }
 }

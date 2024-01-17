@@ -15,16 +15,19 @@ const Hero = () => {
       <Image src={sun.src} alt="sun" width={180} height={1} className='z-10' id='sun'></Image>
 
       </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={2} style={{left:'20%', top:'12%',zIndex:'1000'}}>
-        <div >
-          <h1 className='' style={{display:'relative',fontSize:'150px', fontWeight:'bolder',zIndex:'1000'}}>Saurav Kumar</h1>
-        </div>
-      </ParallaxLayer>
-      <ParallaxLayer offset={0} speed={1.5} >
-        <div className='h-screen w-screen flex justify-center items-end'>
+
+
+      <ParallaxLayer offset={0} speed={1.5} style={{top:'20%'}} id='sea'>
+        <div className='h-screen top-14 w-screen flex justify-center items-end'>
         <Image src={sea.src} alt="sea" width={10000} height={1} className='z-15 flex sea '></Image>
 
       </div>
+      </ParallaxLayer>
+      <ParallaxLayer offset={0.3} speed={2} style={{ left: '20%', top: '12%', zIndex: '1000' }}>
+        {/* Content you want to move left and right */}
+        <h1 className='text-9xl font-mono'>
+          Hi 
+        </h1>
       </ParallaxLayer>
   
     </>
