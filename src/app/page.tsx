@@ -4,7 +4,8 @@ import Header from '@/components/Header'
 
 const page = () => {
   return (
-    <>  
+    <>
+    <Header />
     <Main />
     </>
     )
