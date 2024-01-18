@@ -4,12 +4,26 @@ animation-iteration-count: infinite;
 animation-timing-function: linear;
 animation-duration: 7000ms;
 }
-#sea{
-/* animation-name: wave;
-animation-iteration-count: infinite;
-animation-timing-function: ease-in-out;
-animation-duration: 5000ms; */
-}
+/* Hero.css */
+
+@keyframes wave {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .wave-animation {
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    animation: wave 2s infinite; /* Adjust the duration and other properties as needed */
+  }
+  
 .br{
     border: 4px solid blue;
 }
@@ -20,13 +34,5 @@ animation-duration: 5000ms; */
     }
     to{
         transform: rotate(360deg);
-    }
-}
-@keyframes wave{
-    from{
-        top:0px
-    }
-    to{
-        top:50px;
     }
 }

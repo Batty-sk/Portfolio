@@ -28,7 +28,7 @@ const Hero = () => {
       </ParallaxLayer>
 
          <ParallaxLayer offset={0.5} speed={1.5} style={{top:0,bottom:0,border:'5px solid red',zIndex:'10'}} id='sea'>
-        <div className='flex h-[100%] justify-center items-center br ' style={{backgroundImage:`url(${sea.src})`,backgroundAttachment:'scroll',backgroundRepeat:'no-repeat', }} >
+        <div className='flex h-[100%] justify-center items-center br wave-animation ' id='sea-img' style={{backgroundImage:`url(${sea.src})`,backgroundAttachment:'scroll',backgroundRepeat:'no-repeat', }} >
        </div>
       </ParallaxLayer>
 
