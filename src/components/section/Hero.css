@@ -10,6 +10,9 @@ animation-iteration-count: infinite;
 animation-timing-function: ease-in-out;
 animation-duration: 5000ms; */
 }
+.br{
+    border: 4px solid blue;
+}
 
 @keyframes rotate{
     from{
