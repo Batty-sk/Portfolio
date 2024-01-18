@@ -1,14 +1,13 @@
 import React from 'react'
 import { ParallaxLayer } from '@react-spring/parallax'
 
-function Project() {
+const About = () => {
   return (
     <ParallaxLayer offset={1} speed={1} style={{top:0,bottom:0,left:0,right:0}} >
-        <div className='bg-slate-300 '>
-            <h1> Projects</h1>
+        <div className='bg-yellow-300 font-extrabold text-center '>
+            <h1> About</h1>
         </div>
-        </ParallaxLayer>
-      )
+        </ParallaxLayer>  )
 }
 
-export default Project
+export default About
