@@ -12,7 +12,7 @@ const Hero = () => {
 
   return (
       <>
-      <ParallaxLayer offset={0} speed={5} factor={3}>
+      <ParallaxLayer offset={0} speed={-3}>
       <Image src={sun.src} alt="sun" width={180} height={1} className='z-10' id='sun'></Image>
 
       </ParallaxLayer>
@@ -28,7 +28,7 @@ const Hero = () => {
       </ParallaxLayer>
 
          <ParallaxLayer offset={0.5} speed={1.5} style={{top:0,bottom:0,zIndex:'10'}} id='sea'>
-        <div className='flex h-[100%] br justify-center items-center br wave-animation ' id='sea-img' style={{backgroundImage:`url(${sea.src})`,backgroundAttachment:'scroll',backgroundRepeat:'no-repeat', }} >
+        <div className='flex h-[100%] justify-center items-center  wave-animation ' id='sea-img' style={{backgroundImage:`url(${sea.src})`,backgroundAttachment:'scroll',backgroundRepeat:'no-repeat', }} >
        </div>
       </ParallaxLayer>
 
