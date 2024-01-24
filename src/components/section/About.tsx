@@ -1,5 +1,5 @@
-import {useState,useEffect,useRef} from 'react'
-import { IParallaxLayer, ParallaxLayer } from '@react-spring/parallax'
+import {useEffect,useRef} from 'react'
+import { ParallaxLayer } from '@react-spring/parallax'
 import "./About.css"
 import Github from "../../assests/github.png"
 import Linkedin from "../../assests/linkedin.png"
