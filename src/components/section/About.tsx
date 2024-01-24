@@ -1,3 +1,4 @@
+import React from 'react'
 import {useEffect,useRef} from 'react'
 import { ParallaxLayer } from '@react-spring/parallax'
 import "./About.css"
@@ -7,24 +8,29 @@ import Image from 'next/image'
 import Link from 'next/link'  
 import useVisibleOnScreen from '@/Hooks/useVisibleOnScreen'
 
-const About = () => {
-  const setIsAboutSectionVisible = useVisibleOnScreen();
+type ChildProps = {
+  changeBackground: (section: number) => void;
+};
+
+
+const About:React.FC<ChildProps> = ({ changeBackground }) => {
+  const setIsAboutSectionVisible = useVisibleOnScreen(changeBackground);
   // if the isAboutSectionisVisible then we can just send the signal to update the background 
-  const aboutSectionRef = useRef<HTMLDivElement | null>(null);
+  const aboutSectionRef = useRef<HTMLHeadingElement | null>(null);
 
   useEffect(() => {
     if (aboutSectionRef.current !== null && aboutSectionRef.current !== undefined) {
-      console.log('updating the ref value ... ')
-      setIsAboutSectionVisible(aboutSectionRef.current!);
+      console.log('updating the ref value ... ');
+      setIsAboutSectionVisible(aboutSectionRef.current);
     }
   
   }, [aboutSectionRef]);
 
   return (
     <ParallaxLayer offset={1} speed={1} style={{top:0,bottom:0,left:0,right:0}} >
-        <div ref={aboutSectionRef} className='bg-yellow-100 h-[100%] font-extrabold text-center flex  flex-wrap justify-between relative'>
+        <div  className='bg-yellow-100 h-[100%] font-extrabold text-center flex  flex-wrap justify-between relative'>
          <div className='w-[100%] font-mono'>
-          <h1 className='text-5xl text-yellow-900 ' >About Me</h1>
+          <h1 ref={aboutSectionRef} className='text-5xl text-yellow-900 ' >About Me</h1>
          </div>
           <div className='frame'>
 
