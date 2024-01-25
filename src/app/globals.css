@@ -10,6 +10,29 @@
   }
 }
 
+/* Define a custom scrollbar style */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track (background) of the scrollbar */
+::-webkit-scrollbar-track {
+  background-color: #e0e0e0; /* Set a background color */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* Handle (thumb) of the scrollbar */
+::-webkit-scrollbar-thumb {
+  background-color: #8b4513; /* Wood color */
+  border-radius: 8px; /* Rounded corners */
+}
+
+/* On hover, make the scrollbar thumb slightly darker */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #654321; /* Darker wood color */
+}
+
+
 body {
   color: rgb(var(--foreground-rgb));
 
