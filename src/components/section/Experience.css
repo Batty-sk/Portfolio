@@ -1,0 +1,10 @@
+.xp-title::before{
+    content: '';
+    display: inline-block;
+    width: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    height: 10px;
+    background-color: white;
+    border-radius: 50%;
+}
