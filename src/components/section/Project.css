@@ -2,6 +2,21 @@
     animation: spin-float 5s linear infinite; /* Adjust the duration (5s) and timing function to your preference */
   }
   
+  .stars{
+        animation: spin 1000s linear infinite; /* Adjust the duration (3s) to your desired speed */
+
+      
+  }
+
+        
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   @keyframes spin-float {
     0%, 100% {
       transform: translateY(0) rotate(0); /* Start and end position */
