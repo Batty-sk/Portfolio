@@ -13,8 +13,8 @@ const ContactMe = () => {
     </div>
     </ParallaxLayer>
     
-    <ParallaxLayer offset={4} speed={-2} style={{top:100,bottom:0,left:10,right:0,zIndex:999}} >
-      <Image id='moon'  src={moon.src} height={0} width={180} alt='moon' />
+    <ParallaxLayer offset={4} speed={-2} style={{top:100,bottom:0,left:120,right:0,zIndex:999}} >
+      <Image id='moon'  src={moon.src} height={0} width={160} alt='moon' />
     </ParallaxLayer>
 
     <ParallaxLayer offset={4} speed={0.2} style={{top:100,bottom:100,left:0,right:0,zIndex:999}} >

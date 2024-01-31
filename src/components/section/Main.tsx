@@ -2,7 +2,7 @@
 import { Parallax, ParallaxLayer } from '@react-spring/parallax'
 import {useState,useEffect,useRef} from 'react'
 import Hero from './Hero'
-import Experience from './Experience'
+import Achivements from './Achivements'
 import Header from '../Header'
 import About from './About'
 import Project from './Project'
@@ -18,7 +18,7 @@ function Main() {
     <Parallax  pages={5} style={{ top: '0', left: '0', height:'100%' }}  config={{ tension: 150, friction: 30 }}>
         <Hero />
         <About  changeBackground={setcurrentSection} />
-         <Experience/> 
+         <Achivements/> 
          <Project/>
         <ContactMe />
         </Parallax>
