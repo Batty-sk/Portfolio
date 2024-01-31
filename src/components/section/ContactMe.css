@@ -1,5 +1,24 @@
-#contact{
-    background: radial-gradient(circle, #2a1033, #000000); /* Adjust colors to achieve desired effect */
-    background-size: cover;
-      
+.abstract-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #2a1033, #000000);
+    overflow: hidden;
+  }
+  
+#moon{
+    animation-name: rotate;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-duration: 100000ms;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
 }
