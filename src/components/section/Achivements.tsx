@@ -10,6 +10,8 @@ import problem_sol from '../../assests/problem_solving.svg'
 import data_structures from '../../assests/dsa.svg'
 import complexity from '../../assests/complexity.svg'
 import algorithm from '../../assests/algorithm_thinking.svg'
+import python from '../../assests/python.svg'
+import teamwork from '../../assests/teamwork.svg'
 import computer_vision from '../../assests/computer_vision.svg'
 
 
@@ -31,16 +33,16 @@ function Achivements() {
               <Image src={tag.src} alt='tag' height={1} width={50} />
                 <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Solved <b className='text-5xl m-2'>500+</b> Coding problems across various platforms including LeetCode, HackerRank, and offline.  </h3>
                 </div>
-              <div className='flex justify-center items-center'>
+              <div className='flex justify-center items-center mt-3'>
                 <div className='flex items-center'>
                 <Image src={skill_ico.src} alt='skill' height={1} width={50} />
                 <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
                 </div>
                 <div className='flex bg-white p-3 rounded-md'>
-                  <ul className='font-bold flex items-center font-mono'>
+                <ul className='font-bold flex items-center font-mono'>
                     <li >
                     <Image src={problem_sol.src} alt='prob' height={1} width={50} /> 
-                    Problem solving |
+                    Python |
                     </li>
                     <li >
                     <Image src={data_structures.src} alt='prob' height={1} width={50} /> 
@@ -54,7 +56,7 @@ function Achivements() {
                     <Image src={algorithm.src} alt='prob' height={1} width={50} /> 
                     Algorithmic thinking 
                     </li>
-                  </ul>
+                  </ul>  
                 </div>
               </div>
               </div>
@@ -65,14 +67,28 @@ function Achivements() {
               <Image src={tag.src} alt='tag' height={1} width={50} />
                 <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Secured<b className='text-5xl m-2'>3rd </b>Position in <b className='m-2'>Hackathon Event</b> Organized By Chandigarh University in 2021.</h3>
                 </div>
-              <div className='flex justify-center items-center'>
+              <div className='flex justify-center items-center mt-3'>
                 <div className='flex items-center'>
                 <Image src={skill_ico.src} alt='skill' height={1} width={50} />
                 <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
                 </div>
                 <div className='flex bg-white p-3 rounded-md'>
-                  <p className='font-bold font-mono'>Python, Computer Vision, Teamwork , leadership</p>
-                </div>
+                <ul className='font-bold flex items-center font-mono'>
+                    <li >
+                    <Image src={python.src} alt='prob' height={1} width={50} /> 
+                    Python |
+                    </li>
+                    <li >
+                    <Image src={computer_vision.src} alt='prob' height={1} width={50} /> 
+                    Computer vision |
+                    </li>
+                    <li >
+                    <Image src={teamwork.src} alt='prob' height={1} width={50} /> 
+                    Teamwork | 
+                    </li>
+                  </ul>
+               </div>
+    
               </div>
               </div>
           </Grid>
