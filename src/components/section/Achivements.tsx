@@ -26,13 +26,32 @@ function Achivements() {
                 <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Solved <b className='text-5xl m-2'>500+</b> Coding problems across various platforms including LeetCode, HackerRank, and offline.  </h3>
                 </div>
               <div className='flex justify-center items-center'>
+                <div className='flex items-center'>
                 <Image src={skill_ico.src} alt='skill' height={1} width={50} />
                 <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
+                </div>
+                <div className='flex bg-white p-3 rounded-md'>
+                  <p className='font-bold font-mono'>Problem solving , Data structures, Complexity Analysis, Algorithmic Thinking</p>
+                </div>
               </div>
               </div>
           </Grid>
-          <Grid item sm={6}>
-            
+          <Grid item sm={12} marginTop={10}>
+          <div className='w-[100%] flex  flex-col'>
+                <div className='flex'>
+              <Image src={tag.src} alt='tag' height={1} width={50} />
+                <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Secured<b className='text-5xl m-2'>3rd </b>Position in  <b className='m-2'>Hackathon Event</b> Organized By Chandigarh University in 2021.(Created a Cheating Detection System)</h3>
+                </div>
+              <div className='flex justify-center items-center'>
+                <div className='flex items-center'>
+                <Image src={skill_ico.src} alt='skill' height={1} width={50} />
+                <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
+                </div>
+                <div className='flex bg-white p-3 rounded-md'>
+                  <p className='font-bold font-mono'>Python, Computer Vision, Teamwork , leadership</p>
+                </div>
+              </div>
+              </div>
           </Grid>
 
           </Grid>
