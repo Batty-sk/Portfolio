@@ -1,7 +1,7 @@
 import React from 'react'
 import { ParallaxLayer } from '@react-spring/parallax'
 import "./ContactMe.css"
-import moon from "../../assests/moon.png"
+import moon from "../../assests/moon.svg"
 import Image from 'next/image'
 
 const ContactMe = () => {
@@ -13,8 +13,8 @@ const ContactMe = () => {
     </div>
     </ParallaxLayer>
     
-    <ParallaxLayer offset={4} speed={-2} style={{top:100,bottom:0,left:120,right:0,zIndex:999}} >
-      <Image id='moon'  src={moon.src} height={0} width={160} alt='moon' />
+    <ParallaxLayer offset={4} speed={-2} style={{top:100,bottom:0,left:100,right:0,zIndex:999}} >
+      <Image id='moon'  src={moon.src} height={0} width={200} alt='moon' />
     </ParallaxLayer>
 
     <ParallaxLayer offset={4} speed={0.2} style={{top:100,bottom:100,left:0,right:0,zIndex:999}} >

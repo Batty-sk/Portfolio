@@ -5,6 +5,7 @@ import './Achivements.css'
 import Image from 'next/image'
 import title_badge from '../../assests/badge.svg'
 import tag from '../../assests/achivement_tag.svg'
+import skill_ico from '../../assests/skill.svg'
 
 
 function Achivements() {
@@ -15,14 +16,20 @@ function Achivements() {
             <Image src={title_badge.src} alt='badge' height={1} width={100}/>
 
             <h1 className='font-mono text-center text-6xl text-white p-4 font-bold'> Achivements</h1>
-            </div>
+            </div>  
           <Grid container justifyContent={'space-evenly'} margin={2}>
 
-          <Grid item sm={4}>
-            <div className='flex '>
+          <Grid item sm={12}>
+              <div className='w-[100%] flex  flex-col'>
+                <div className='flex'>
               <Image src={tag.src} alt='tag' height={1} width={50} />
-              <h3 className='font-mono text-center xp-title text-white text-2xl'>Full Stack Intern</h3>
-            </div>
+                <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Solved <b className='text-5xl m-2'>500+</b> Coding problems across various platforms including LeetCode, HackerRank, and offline.  </h3>
+                </div>
+              <div className='flex justify-center items-center'>
+                <Image src={skill_ico.src} alt='skill' height={1} width={50} />
+                <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
+              </div>
+              </div>
           </Grid>
           <Grid item sm={6}>
             
