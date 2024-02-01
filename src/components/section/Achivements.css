@@ -1,0 +1,9 @@
+#achivements ul{
+    list-style-type: none;
+    margin:0;
+}
+#achivements ul li{
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+}

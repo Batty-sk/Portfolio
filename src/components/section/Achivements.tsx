@@ -6,11 +6,17 @@ import Image from 'next/image'
 import title_badge from '../../assests/badge.svg'
 import tag from '../../assests/achivement_tag.svg'
 import skill_ico from '../../assests/skill.svg'
+import problem_sol from '../../assests/problem_solving.svg'
+import data_structures from '../../assests/dsa.svg'
+import complexity from '../../assests/complexity.svg'
+import algorithm from '../../assests/algorithm_thinking.svg'
+import computer_vision from '../../assests/computer_vision.svg'
+
 
 
 function Achivements() {
   return (
-    <ParallaxLayer offset={2} speed={1} style={{top:0,bottom:0,left:0,right:0}} >
+    <ParallaxLayer offset={2} speed={1} style={{top:0,bottom:0,left:0,right:0}} id='achivements' >
         <div className='bg-[#13553D] h-[100%] '>
           <div className='flex justify-center p-2'>
             <Image src={title_badge.src} alt='badge' height={1} width={100}/>
@@ -31,7 +37,24 @@ function Achivements() {
                 <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
                 </div>
                 <div className='flex bg-white p-3 rounded-md'>
-                  <p className='font-bold font-mono'>Problem solving , Data structures, Complexity Analysis, Algorithmic Thinking</p>
+                  <ul className='font-bold flex items-center font-mono'>
+                    <li >
+                    <Image src={problem_sol.src} alt='prob' height={1} width={50} /> 
+                    Problem solving |
+                    </li>
+                    <li >
+                    <Image src={data_structures.src} alt='prob' height={1} width={50} /> 
+                    Data structures |
+                    </li>
+                    <li >
+                    <Image src={complexity.src} alt='prob' height={1} width={50} /> 
+                    Complexity Analysis | 
+                    </li>
+                    <li >
+                    <Image src={algorithm.src} alt='prob' height={1} width={50} /> 
+                    Algorithmic thinking 
+                    </li>
+                  </ul>
                 </div>
               </div>
               </div>
@@ -40,7 +63,7 @@ function Achivements() {
           <div className='w-[100%] flex  flex-col'>
                 <div className='flex'>
               <Image src={tag.src} alt='tag' height={1} width={50} />
-                <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Secured<b className='text-5xl m-2'>3rd </b>Position in  <b className='m-2'>Hackathon Event</b> Organized By Chandigarh University in 2021.(Created a Cheating Detection System)</h3>
+                <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Secured<b className='text-5xl m-2'>3rd </b>Position in <b className='m-2'>Hackathon Event</b> Organized By Chandigarh University in 2021.</h3>
                 </div>
               <div className='flex justify-center items-center'>
                 <div className='flex items-center'>
