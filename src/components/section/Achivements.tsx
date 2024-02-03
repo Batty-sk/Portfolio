@@ -91,6 +91,17 @@ function Achivements() {
     
               </div>
               </div>
+
+              <div className='w-[100%] flex mt-3  flex-col'>
+                <div className='flex'>
+              <Image src={tag.src} alt='tag' height={1} width={50} />
+                <h3 className='flex font-mono items-center text-center xp-title text-white text-3xl'><b>Certifications:</b></h3>
+                </div>
+              <div className='flex justify-center items-center mt-3'>
+                  
+               </div>
+    
+              </div>
           </Grid>
 
           </Grid>
