@@ -13,6 +13,8 @@ import algorithm from '../../assests/algorithm_thinking.svg'
 import python from '../../assests/python.svg'
 import teamwork from '../../assests/teamwork.svg'
 import computer_vision from '../../assests/computer_vision.svg'
+import dsa_certificate from '../../assests/job_ready_boot.png'
+
 
 
 
@@ -33,7 +35,7 @@ function Achivements() {
               <Image src={tag.src} alt='tag' height={1} width={50} />
                 <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Solved <b className='text-5xl m-2'>500+</b> Coding problems across various platforms including LeetCode, HackerRank, and offline.  </h3>
                 </div>
-              <div className='flex justify-center items-center mt-3'>
+              <div className='flex justify-center items-center mt-2'>
                 <div className='flex items-center'>
                 <Image src={skill_ico.src} alt='skill' height={1} width={50} />
                 <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
@@ -61,13 +63,13 @@ function Achivements() {
               </div>
               </div>
           </Grid>
-          <Grid item sm={12} marginTop={10}>
+          <Grid item sm={12} marginTop={5}>
           <div className='w-[100%] flex  flex-col'>
                 <div className='flex'>
               <Image src={tag.src} alt='tag' height={1} width={50} />
-                <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Secured<b className='text-5xl m-2'>3rd </b>Position in <b className='m-2'>Hackathon Event</b> Organized By Chandigarh University in 2021.</h3>
+                <h3 className='flex font-mono items-center text-center xp-title text-white text-2xl'>Got <b className='text-5xl m-2'>3rd</b> place in the Chandigarh University Hackathon 2021. We made a cool cheating detection system that helped us grab that spot.</h3>
                 </div>
-              <div className='flex justify-center items-center mt-3'>
+              <div className='flex justify-center items-center mt-2'>
                 <div className='flex items-center'>
                 <Image src={skill_ico.src} alt='skill' height={1} width={50} />
                 <h2 className='font-mono font-bold text-white text-2xl'>Skills Learned: </h2>
@@ -92,14 +94,29 @@ function Achivements() {
               </div>
               </div>
 
-              <div className='w-[100%] flex mt-3  flex-col'>
+              <div className='w-[100%] flex mt-2  flex-col'>
                 <div className='flex'>
               <Image src={tag.src} alt='tag' height={1} width={50} />
                 <h3 className='flex font-mono items-center text-center xp-title text-white text-3xl'><b>Certifications:</b></h3>
                 </div>
-              <div className='flex justify-center items-center mt-3'>
-                  
-               </div>
+              <div className='flex justify-center  mt-3'>
+              <Image src={dsa_certificate.src} alt='certificate_dsa' height={1} width={270} />
+              <div className='flex bg-white p-3 rounded-md'>
+                <ul className='font-bold flex items-center font-mono'>
+                    <li >
+                    <Image src={python.src} alt='prob' height={1} width={50} /> 
+                    C++ |
+                    </li>
+                    <li >
+                    <Image src={computer_vision.src} alt='prob' height={1} width={50} /> 
+                    DSA |
+                    </li>
+                    <li >
+                    <Image src={teamwork.src} alt='prob' height={1} width={50} /> 
+                    IOT | 
+                    </li>
+                  </ul>
+               </div>                </div>
     
               </div>
           </Grid>
