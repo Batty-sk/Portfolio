@@ -5,6 +5,7 @@ import Image from 'next/image'
 import './Project.css'
 import Star1 from '../../assests/stars.png'
 import Star2 from '../../assests/stars2.png'
+import Project_struct from './Project_struct'
 
 
 const Project = () => {
@@ -13,6 +14,12 @@ const Project = () => {
     <ParallaxLayer offset={3} speed={1} style={{top:0,bottom:0,left:0,right:0}} >
     <div style={{background:'radial-gradient(circle, #2a1033, #000000)',backgroundRepeat:'no-repeat',backgroundSize:'cover', height:'100%',backgroundPositionY:'Bottom' }}>
       <h1 className='text-cyan-300 text-6xl text-center p-4 font-bold font-mono'>Projects</h1>
+      <div className='h-[100%] w-[100%] mt-3 bg-transparent'>
+
+      <Project_struct />
+
+
+      </div>
     </div>
     </ParallaxLayer>
     
