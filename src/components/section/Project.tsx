@@ -7,8 +7,8 @@ import Star1 from '../../assests/stars.png'
 import Star2 from '../../assests/stars2.png'
 import { Grid } from '@mui/material'
 import Project_struct from './Project_struct'
-import project_cineflix from '../../assests/project_cineflix.png'
-import project_magic_cards from '../../assests/project_magic_cards.png'
+import project_cineflix from '../../assests/project_cineflix.svg'
+import project_magic_cards from '../../assests/project_magic_cards.svg'
 
 
 const Project = () => {
@@ -22,7 +22,7 @@ const Project = () => {
     <Grid  container justifyContent={'space-evenly'}>
       <Project_struct img={project_cineflix.src} name='Movie Companion App' />
 
-      <Project_struct img={project_cineflix.src} name='Movie Companion App' />
+      <Project_struct img={project_magic_cards.src} name='Magic Cards' />
 
       </Grid>
 

@@ -16,7 +16,7 @@ const Project_struct= ({img,name}:prop) => {
       <div style={{boxShadow:'0px 5px 8px black  '}}><Image src={img} height={1} width={350} alt='' />
        </div>
        <div className='flex flex-col justify-center items-center'>
-        <h2 className='text-white font-mono text-3xl ms-5  '>{name}</h2>
+        <h2 className='text-white font-mono text-3xl ms-5 mb-3 '>{name}</h2>
         <Button
           variant="contained"
           color="primary"
