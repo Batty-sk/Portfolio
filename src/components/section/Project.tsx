@@ -5,7 +5,10 @@ import Image from 'next/image'
 import './Project.css'
 import Star1 from '../../assests/stars.png'
 import Star2 from '../../assests/stars2.png'
+import { Grid } from '@mui/material'
 import Project_struct from './Project_struct'
+import project_cineflix from '../../assests/project_cineflix.png'
+import project_magic_cards from '../../assests/project_magic_cards.png'
 
 
 const Project = () => {
@@ -16,7 +19,12 @@ const Project = () => {
       <h1 className='text-cyan-300 text-6xl text-center p-4 font-bold font-mono'>Projects</h1>
       <div className='h-[100%] w-[100%] mt-3 bg-transparent'>
 
-      <Project_struct />
+    <Grid  container justifyContent={'space-evenly'}>
+      <Project_struct img={project_cineflix.src} name='Movie Companion App' />
+
+      <Project_struct img={project_cineflix.src} name='Movie Companion App' />
+
+      </Grid>
 
 
       </div>
