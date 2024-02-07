@@ -6,14 +6,15 @@ import Link from 'next/link'
 
 type prop={
   img:string,
-  name:string
+  name:string,
+  width:number
 }
-const Project_struct= ({img,name}:prop) => {  
+const Project_struct= ({img,name,width}:prop) => {  
   return (
-    <Grid item md={5} >
+    <Grid item md={4} >
     <div className='flex flex-col p-3 ' style={{boxShadow:'0px 0px 8px purple'}}>
         <div className='flex '>
-      <div style={{boxShadow:'0px 5px 8px black  '}}><Image src={img} height={1} width={350} alt='' />
+      <div style={{boxShadow:'0px 5px 8px black  '}}><Image src={img} height={1} width={width} alt='' />
        </div>
        <div className='flex flex-col justify-center items-center'>
         <h2 className='text-white font-mono text-3xl ms-5 mb-3 '>{name}</h2>

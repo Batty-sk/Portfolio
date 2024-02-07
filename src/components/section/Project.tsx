@@ -14,15 +14,15 @@ import project_magic_cards from '../../assests/project_magic_cards.svg'
 const Project = () => {
   return (
     <>
-    <ParallaxLayer offset={3} speed={1} style={{top:0,bottom:0,left:0,right:0}} >
+    <ParallaxLayer offset={3} speed={1} style={{top:0,bottom:0,left:0,right:0,height:'200vh'}} >
     <div style={{background:'radial-gradient(circle, #2a1033, #000000)',backgroundRepeat:'no-repeat',backgroundSize:'cover', height:'100%',backgroundPositionY:'Bottom' }}>
       <h1 className='text-cyan-300 text-6xl text-center p-4 font-bold font-mono'>Projects</h1>
       <div className='h-[100%] w-[100%] mt-3 bg-transparent'>
 
     <Grid  container justifyContent={'space-evenly'}>
-      <Project_struct img={project_cineflix.src} name='Movie Companion App' />
+      <Project_struct img={project_cineflix.src} name='Movie Companion App'width={350} />
 
-      <Project_struct img={project_magic_cards.src} name='Magic Cards' />
+      <Project_struct img={project_magic_cards.src} name='Magic Cards' width={250} />
 
       </Grid>
 
