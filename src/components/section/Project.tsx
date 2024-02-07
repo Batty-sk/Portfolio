@@ -9,6 +9,7 @@ import { Grid } from '@mui/material'
 import Project_struct from './Project_struct'
 import project_cineflix from '../../assests/project_cineflix.svg'
 import project_magic_cards from '../../assests/project_magic_cards.svg'
+import project_video_conferencing from '../../assests/project_video_conferencing.svg'
 
 
 const Project = () => {
@@ -22,7 +23,9 @@ const Project = () => {
     <Grid  container justifyContent={'space-evenly'}>
       <Project_struct img={project_cineflix.src} name='Movie Companion App'width={350} />
 
-      <Project_struct img={project_magic_cards.src} name='Magic Cards' width={250} />
+      <Project_struct img={project_magic_cards.src} name='Magic Cards' width={315} />
+      <Project_struct img={project_video_conferencing.src} name='Video Conferencing App' width={355} />
+      <Project_struct img={project_video_conferencing.src} name='TagMagnet' width={355} />
 
       </Grid>
 
