@@ -34,23 +34,23 @@ const Project = () => {
     </div>
     </ParallaxLayer>
     
-    <ParallaxLayer offset={3} speed={0.5} style={{top:0,bottom:0,left:500,right:0,zIndex:999}} >
+    <ParallaxLayer offset={3} speed={0.5} style={{top:0,bottom:0,left:500,right:0,zIndex:9}} >
       <Image  src={me.src} height={50} width={100} alt='logo' className='animate-spin-float'/>
     </ParallaxLayer>
-    <ParallaxLayer offset={3} speed={3} style={{top:0,bottom:0,left:0,right:0,zIndex:10}} >
+    <ParallaxLayer offset={3} speed={3} style={{top:0,bottom:0,left:0,right:0,zIndex:0}} >
 <div className='star' style={{backgroundImage:`url(${Star1.src})`,backgroundRepeat:'repeat',backgroundSize:'contain', height:'70%',backgroundPositionY:'Bottom' }}></div>
     </ParallaxLayer>
-    <ParallaxLayer offset={3} speed={1} style={{top:300,bottom:0,left:0,right:0,zIndex:10}} >
+    <ParallaxLayer offset={3} speed={1} style={{top:300,bottom:0,left:0,right:0,zIndex:0}} >
 <div className='star' style={{backgroundImage:`url(${Star1.src})`,backgroundRepeat:'repeat',backgroundSize:'contain', height:'50%',backgroundPositionY:'Bottom' }}></div>
     </ParallaxLayer>
-    <ParallaxLayer offset={3} speed={2} style={{top:0,bottom:0,left:100,right:0,zIndex:10}} >
+    <ParallaxLayer offset={3} speed={2} style={{top:0,bottom:0,left:100,right:0,zIndex:0}} >
 <div className='star-reverse ' style={{backgroundImage:`url(${Star2.src})`,backgroundRepeat:'repeat',backgroundSize:'contain', height:'70%',backgroundPositionY:'Bottom' }}></div>
     </ParallaxLayer>
-    <ParallaxLayer offset={3} speed={2.5} style={{top:0,bottom:50,left:500,right:0,zIndex:10}} >
+    <ParallaxLayer offset={3} speed={2.5} style={{top:0,bottom:50,left:500,right:0,zIndex:0}} >
 <div className='star-reverse ' style={{backgroundImage:`url(${Star2.src})`,backgroundRepeat:'repeat',backgroundSize:'contain', height:'70%',backgroundPositionY:'Bottom' }}></div>
     </ParallaxLayer>
 
-    <ParallaxLayer offset={3} speed={3} style={{top:0,bottom:0,left:1000,right:0,zIndex:10}} >
+    <ParallaxLayer offset={3} speed={3} style={{top:0,bottom:0,left:1000,right:0,zIndex:0}} >
 <div className='star-reverse ' style={{backgroundImage:`url(${Star1.src})`,backgroundRepeat:'repeat',backgroundSize:'contain', height:'60%',backgroundPositionY:'Bottom' }}></div>
     </ParallaxLayer>
     

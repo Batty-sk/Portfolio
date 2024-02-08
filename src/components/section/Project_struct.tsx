@@ -14,7 +14,7 @@ const Project_struct= ({img,name,width}:prop) => {
     <Grid item md={5} marginTop={10}>
     <div className='flex flex-col p-3 ' style={{boxShadow:'0px 0px 8px purple'}}>
         <div className='flex '>
-      <Grid item md={6} style={{boxShadow:'0px 5px 8px black  '}}>
+      <Grid item md={6} style={{boxShadow:'0px 5px 8px black',border:'1px solid white'}}>
         <Image src={img} height={1} width={width} alt='' />
        </Grid>
        <Grid item md={5} >
