@@ -1,3 +1,3 @@
 import sun from "./sun.png"
-
-export {sun}
+import ocean from "./ocean.png"
+export {sun,ocean}

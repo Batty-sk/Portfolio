@@ -1,7 +1,25 @@
-.sun{
+.rotate{
     animation: spin 5s linear infinite; 
 
 }
+@keyframes wave-animation {
+    0% {
+      transform: translateY(0) translateZ(0);
+    }
+    50% {
+      transform: translateY(-10px) translateZ(0); /* Adjust wave height as needed */
+    }
+    100% {
+      transform: translateY(0) translateZ(0);
+    }
+  }
+  
+
+  
+  .ocean img {
+    animation: wave-animation 2s ease-in-out infinite; /* Adjust animation duration and timing function */
+  }
+  
 @keyframes spin {
     from {
       transform: rotate(0deg);
