@@ -1,11 +1,16 @@
-import React from "react"
+"use client"
 
+import React from "react"
+import Header from "../components/Header"
+import Hero from "../components/Hero"
+import About from "../components/About"
 const page = () => {
   return (
-    <>
-
-    <h1 className="">Ola Martinesses</h1>
-    </>
+    <main>
+    <Header />
+    <Hero />
+    <About />
+    </main>
     )
 }
 
