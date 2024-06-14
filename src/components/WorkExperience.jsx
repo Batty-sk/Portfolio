@@ -49,6 +49,12 @@ const WorkExperience = () => {
             </Image>
         </div>
         </div>
+
+        <div className='relative flex justify-center items-center h-full'>
+            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-black border-x-4 z-[-99]'></div>
+            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full bg-cyan-400 z-[-98]'></div>
+
+        </div>
     </section>
   )
 }
