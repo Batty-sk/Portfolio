@@ -21,7 +21,7 @@ const Hero = () => {
       duration: 1,
       scrollTrigger: {
         trigger: '#hero',
-        start: 'top top',
+        start: 'top top+=150',
         end: 'bottom top',
         scrub: true,
       },
