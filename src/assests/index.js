@@ -11,4 +11,5 @@ import typescript from "./icons8-typescript-48.png"
 import instagram from "./icons8-instagram-96.png"
 import linkedin from "./icons8-linkedin-96.png"
 import githubsocial from "./icons8-github-96.png"
-export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram}
+import cloud from "./clouds.png"
+export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud}
