@@ -52,7 +52,7 @@ const Hero = () => {
         <Image src={sun} height={152} width={152} id='sun' priority className='sun' alt='sun' />
       </div>
 
-      <div className='text-container'>
+      <div className='text-container opacity-0'>
         <h1 className='text-7xl font-bold font-mono first-letter:text-blue-500 text-black'>HI,
               <span className={`${DS_font.className} text-3xl text-black font-extralight`}> Iam</span>
         </h1>
