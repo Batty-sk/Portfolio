@@ -1,0 +1,5 @@
+.universe-background {
+    background: radial-gradient(circle at center bottom, #472f92, transparent 50%), #090a0f;
+    position: relative;
+    overflow: hidden;  
+  }

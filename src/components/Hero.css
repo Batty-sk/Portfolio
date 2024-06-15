@@ -1,5 +1,5 @@
 .rotate{
-    animation: spin 5s linear infinite; 
+    animation: spin 50s linear infinite; 
 
 }
 @keyframes wave-animation {
