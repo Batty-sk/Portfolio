@@ -1,5 +1,17 @@
 .universe-background {
-    background: radial-gradient(circle at center bottom, #472f92, transparent 50%), #090a0f;
+    background: radial-gradient(circle at center bottom, #802f92, transparent 50%), #090a0f;
     position: relative;
     overflow: hidden;  
+  }
+  .universe-background-rev {
+    background: radial-gradient(circle at center top, #802f92, transparent 50%), #090a0f;
+    position: relative;
+    overflow: hidden;  
+  }
+  .onhover{
+    transition: all 300ms;
+  }
+  .onhover:hover{
+
+    top:80%;
   }

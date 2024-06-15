@@ -26,7 +26,7 @@ const Contact = () => {
         })
     },[])
   return (
-    <section className='h-screen bg-black' id='contact'>
+    <section className='h-screen universe-background-rev ' id='contact'>
     <div className='relative '>
     <div className='text-4xl font-mono text-white text-center font-bold p-5 first-letter:text-5xl'>Contact Me</div>
     <div className='img-container opacity-0 absolute top-10 left-10 '>
