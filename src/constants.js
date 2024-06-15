@@ -5,5 +5,5 @@ export const PROGRAMMING_SKILLS = [c,cplus,react,typescript,python,mysql,github,
 export const SOCIAL_LINKS = [githubsocial,linkedin,instagram]
 
 export const WORK_EXPERIENCE = [{role:'Full Stack Developer Intern',company:'Hoping Minds',duration:'6 months'},
-    {role:'Fronted Developer',company:'Texium Solutions',duration:'On Going'}
+    {role:'Fronted Developer',company:'Texium Solutions',duration:'working'}
 ]
