@@ -26,7 +26,7 @@ const Contact = () => {
         })
     },[])
   return (
-    <section className='h-screen universe-background-rev ' id='contact'>
+    <section className='h-fit pt-20 pb-10 universe-background-rev ' id='contact'>
     <div className='relative '>
     <div className='text-4xl font-mono text-white text-center font-bold p-5 first-letter:text-5xl'>Contact Me</div>
     <div className='img-container opacity-0 absolute top-10 left-10 '>
@@ -34,7 +34,7 @@ const Contact = () => {
     </div>
 
      <div className='contact-form flex justify-center'>
-     <form className="bg-gray-800 text-white font-mono p-8 rounded-lg shadow-lg w-full max-w-lg">
+     <form className="bg-[#ffffff15] text-white font-mono p-8 rounded-lg shadow-lg w-full max-w-lg">
         <div className="mb-4">
           <label className="block text-sm font-bold mb-2" htmlFor="name">
             Name
@@ -70,7 +70,7 @@ const Contact = () => {
         </div>
         <div className="text-center">
           <button
-            className="bg-cyan-500 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            className="bg-pink-600 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
             type="submit"
           >
             Send Message
@@ -85,3 +85,4 @@ const Contact = () => {
 }
 
 export default Contact
+

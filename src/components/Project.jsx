@@ -4,7 +4,7 @@ import Carosuel from './Carosuel'
 
 const Project = () => {
   return (
-    <section className='h-screen universe-background ' id='projects'>
+    <section className='h-[120vh] universe-background ' id='projects'>
         <div className='pt-5'>
             <h1 className='text-white text-4xl text-center font-mono font-bold first-letter:text-6xl'>PROJECTS</h1>
         </div>

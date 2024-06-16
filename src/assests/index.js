@@ -14,4 +14,5 @@ import githubsocial from "./icons8-github-96.png"
 import moon from "./moon.png"
 import cloud from "./clouds.png"
 import link from "./icons8-link-96.png"
-export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link}
+import cinflix from "./cinflix.jpg"
+export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix}
