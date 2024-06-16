@@ -26,10 +26,10 @@ const Header = () => {
           setColor([2,'orange'])
           break;
         case 3:
-            setColor([3,'green'])
+            setColor([3,'#f9f7cd'])
             break;
         default:
-          setColor([3,'green'])
+          setColor([3,'#f9f7cd'])
       }
     }
 

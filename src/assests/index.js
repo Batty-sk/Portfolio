@@ -18,4 +18,5 @@ import cinflix from "./cinflix.jpg"
 import magiccards from "./ma.jpg"
 import algorithmvisual from "./algo_visual.jpg"
 import quiz from "./quiz.jpg"
-export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual}
+import mespace from "./me_space.png"
+export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual,mespace}

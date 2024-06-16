@@ -1,10 +1,10 @@
 .universe-background {
-    background: radial-gradient(circle at center bottom, #802f92, transparent 50%), #090a0f;
-    position: relative;
+  background: radial-gradient(circle at center top, #2f6292, transparent 70%), #090a0f;
+
     overflow: hidden;  
   }
   .universe-background-rev {
-    background: radial-gradient(circle at center top, #802f92, transparent 50%), #090a0f;
+    background: radial-gradient(circle at center bottom, #2f6292, transparent 70%), #090a0f;
     position: relative;
     overflow: hidden;  
   }
@@ -18,6 +18,9 @@
   .animate-card{
     transition: all 500ms;
     animation: animateCard 1s ease-in-out;
+  }
+  .float{
+
   }
 
   @keyframes animateCard

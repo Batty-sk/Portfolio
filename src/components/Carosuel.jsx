@@ -30,6 +30,7 @@ const Carosuel = () => {
   const handleClick = (event,i)=>{
     console.log('clicked',event.target)
     // check for the card click.
+
     setAnimate(i)
   }
 
