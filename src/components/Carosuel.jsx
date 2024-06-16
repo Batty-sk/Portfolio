@@ -1,12 +1,13 @@
-import React,{useEffect} from 'react'
+import React,{useEffect, useState} from 'react'
 import Image from 'next/image'
 import "./Project.css"
 import { PROJECTS } from '../constants'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { githubsocial, link } from '../assests'
+
 const Carosuel = () => {
-  
+  const [animate, setAnimate] = useState(-1)
   useEffect(()=>{
       gsap.registerPlugin(ScrollTrigger)
       gsap.fromTo('.projectds-cards',{
@@ -26,21 +27,21 @@ const Carosuel = () => {
 
   },[])
 
-  const handleClick = ()=>{
+  const handleClick = (event,i)=>{
+    console.log('clicked',event.target)
     // check for the card click.
+    setAnimate(i)
   }
-  const handleHover =()=>{
 
-  }
   return (
     
     <div className='relative w-[90%] max-h-full  border border-white flex justify-center '>
         {PROJECTS.map((x,i)=>{
           return(
-            <div key={i} onClick={handleClick} onMouseEnter={handleHover}  className={`absolute cursor-pointer transition-all duration-200 hover:shadow-md hover:shadow-orange-500  projects-cards w-80 flex flex-col justify-center shadow-md transform shadow-black items-center -translate-x-1/2 bg-zinc-200 rounded-md  pt-10  -translate-y-1/2 right-1/2 `} style={{
+            <div key={i} onClick={(x)=>handleClick(x,i)}  className={`absolute cursor-pointer transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-orange-500 hover:scale-105  projects-cards w-80 flex flex-col justify-center shadow-md transform shadow-black items-center -translate-x-1/2 bg-zinc-200 rounded-md  pt-10  -translate-y-1/2 right-1/2 `} style={{
               left:`${60-(i*8)}%`,
               rotate:`-${i*5}deg`,
-              zIndex:`${50-(i*10)}`,
+              zIndex:`${animate==i?99:50-(i*10)}`,
               
             }}>
              <div className='relative w-full h-full flex flex-col gap-3 justify-center items-center'>

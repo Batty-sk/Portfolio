@@ -15,5 +15,19 @@
 
     top:80%;
   }
-  .projects-cards:hover{
+  .animate-card{
+    transition: all 500ms;
+    animation: animateCard 1s ease-in-out;
+  }
+
+  @keyframes animateCard
+  {
+    from{
+      transform: rotate(180deg);
+      left:10%,
+    }
+  to{
+    transform: rotate(360deg);
+    left:50%
+  }
   }
