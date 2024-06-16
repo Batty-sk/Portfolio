@@ -4,6 +4,7 @@ import "./Project.css"
 import { PROJECTS } from '../constants'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import { githubsocial, link } from '../assests'
 const Carosuel = () => {
   
   useEffect(()=>{
@@ -46,8 +47,15 @@ const Carosuel = () => {
               <div className='w-56 h-[16rem] block bg-zinc-200 '>
                 <Image src={x.image} alt={x.name} height={'100%'} width={'100%'}></Image>
               </div>
-              <h3 className='p-3 text-white bg-black rounded-md m-3 font-mono'>{x.name}</h3>
-  
+              <div className='p-3 flex justify-center items-center gap-2'>
+                <a href={x.github} target='_blank' className='w-fit h-fit transition-all duration-150 rounded-full hover:bg-zinc-300'>
+                <Image src={githubsocial} width={30} height={30} alt='github'></Image>
+                </a>
+              <h3 className=' text-white bg-black rounded-md p-2 m-3 font-mono'>{x.name}</h3>
+              <a href={x.link} target='_blank' className='w-fit h-fit transition-all duration-150 rounded-full hover:bg-zinc-300'>
+              <Image  src={link} width={30} height={30} alt='github'></Image>
+              </a>
+  </div>
           </div>
           </div>)
 

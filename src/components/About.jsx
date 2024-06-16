@@ -44,7 +44,7 @@ const About = () => {
         })
     },[])
   return (
-    <section className='h-[500px] w-full text-black flex flex-col items-center  bg-[#fffad7] overflow-hidden' id='about'>
+    <section className='h-screen w-full text-black flex flex-col justify-center items-center  bg-[#fffad7] overflow-hidden' id='about'>
             <div className='about-title p-5 opacity-0'>
                 <h1 className='text-amber-700 font-bold font-mono text-4xl'>About</h1>    
             </div>
