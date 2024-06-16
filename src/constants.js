@@ -1,4 +1,4 @@
-import {cinflix, github,c,cplus,react,typescript,gcp,mysql,python,instagram,linkedin,githubsocial } from "./assests"
+import {cinflix, github,c,cplus,react,typescript,gcp,mysql,python,instagram,linkedin,githubsocial,algorithmvisual,magiccards,quiz } from "./assests"
 export const HEADER_NAV = ["","","",""]
 
 export const PROGRAMMING_SKILLS = [c,cplus,react,typescript,python,mysql,github,gcp]
@@ -14,19 +14,19 @@ export const PROJECTS = [{
     github:"",
     link:''
 },{
-    name:'Video Conferencing',
-    image:cinflix,
+    name:'Quiz App',
+    image:quiz,
     github:'',
     link:''
 },{
     name:'Algorithm Visualizer',
-    image:cinflix,
+    image:algorithmvisual,
     github:'',
     link:''
 
 },{
     name:'2d Magic Cards',
-    image:cinflix,
+    image:magiccards,
     github:'',
     link:''
 

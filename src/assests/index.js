@@ -15,4 +15,7 @@ import moon from "./moon.png"
 import cloud from "./clouds.png"
 import link from "./icons8-link-96.png"
 import cinflix from "./cinflix.jpg"
-export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix}
+import magiccards from "./ma.jpg"
+import algorithmvisual from "./algo_visual.jpg"
+import quiz from "./quiz.jpg"
+export {sun,ocean,cplus,c,github,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual}
