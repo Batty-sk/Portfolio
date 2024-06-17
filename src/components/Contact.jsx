@@ -4,9 +4,10 @@ import gsap from 'gsap'
 import { useEffect } from 'react'
 import Image from 'next/image'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
+import useIsMobile from '../useIsMobile'
 
 const Contact = () => {
-
+    const isMobile = useIsMobile()
     useEffect(()=>{
         gsap.registerPlugin(ScrollTrigger)
         gsap.fromTo('.img-container',{
@@ -28,13 +29,13 @@ const Contact = () => {
   return (
     <section className='h-fit pt-20 pb-10 universe-background ' id='contact'>
     <div className='relative '>
-    <div className='text-4xl font-mono text-white text-center font-bold p-5 first-letter:text-5xl'>Contact Me</div>
-    <div className='img-container opacity-0 absolute top-10 left-10 '>
-        <Image src={moon} alt='moon' height={200} width={200}></Image>
-    </div>
+    <div className='text-4xl font-mono text-white text-center font-bold p-5 relative first-letter:text-5xl first-letter:font-extrabold z-10'>Contact Me</div>
+    {isMobile?null:<div className='img-container opacity-0 absolute top-10 left-10 z-0 '>
+        <Image src={moon} alt='moon' height={''} width={''} className='md:h-[200px] md:w-[200px] h-[150px] w-[150px] '></Image>
+    </div>}
 
      <div className='contact-form flex justify-center'>
-     <form className="bg-[#ffffff15] text-white font-mono p-8 rounded-lg shadow-lg w-full max-w-lg">
+     <form className="bg-[#ffffff15] text-white  relative z-20 font-mono md:w-[70%] w-[90%] p-8 rounded-lg shadow-lg max-w-lg">
         <div className="mb-4">
           <label className="block text-sm font-bold mb-2" htmlFor="name">
             Name

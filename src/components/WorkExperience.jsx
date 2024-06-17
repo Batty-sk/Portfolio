@@ -76,10 +76,10 @@ const WorkExperience = () => {
 
     },[])
   return (
-    <section className='h-screen overflow-hidden ' id='w-experience' ref={containerRef}>
+    <section className='h-screen mt-3 overflow-hidden ' id='w-experience' ref={containerRef}>
         <div className='relative flex justify-center'>
     <div className='text-black text-center p-3'>
-        <h1 className=' font-mono font-bold first-letter:text-orange-400 text-5xl'>Work Experience</h1>
+        <h1 className=' font-mono font-bold first-letter:text-orange-400 first-letter:text-5xl md:text-5xl text-3xl'>Work Experience</h1>
         </div>
         <div className='clouds absolute left-[58%] transform -translate-x-1/2  -translate-y-5' id='cloud2'>
             <Image className='cloud' src={cloud} height={250} width={250} alt='cloud' >
@@ -94,12 +94,12 @@ const WorkExperience = () => {
         <div className='relative flex justify-center items-center h-full overflow-hidden'>
             <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-black border-x-4 z-[-99]'></div>
             <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full bg-cyan-400 z-[-97]' id='rounded-me'></div>
-            <div className=' font-mono exp-container h-full w-full  flex flex-col justify-around items-center'>
+            <div className=' font-mono exp-container h-full w-full  flex flex-col md:justify-around justify-center md:gap-0 gap-12 items-center'>
                 {WORK_EXPERIENCE.map((exp,i)=>{
                     if(i){
-                    return <div className='text-start relative z-[-98] opacity-0 exp-items h-32 w-[50%]  shadow-md shadow-green-100 text-black rounded-3xl border bg-zinc-100 ml-[50%] pl-8' key={i}>
+                    return <div className='text-start relative z-[-98] opacity-0 exp-items w-[50%]  shadow-md shadow-green-100 text-black rounded-3xl border bg-zinc-100 ml-[50%] pl-8' key={i}>
                        <div className=' p-3 '> 
-                        <h3 className=' font-bold text-3xl'>{exp.role}</h3>
+                        <h3 className=' font-bold md:text-3xl text-2xl'>{exp.role}</h3>
                         <h3 className='font-bold'>Company: <span className='font-extralight'>{exp.company}</span></h3> 
 
                         <h3 className='font-bold'>Period: <span className='font-extralight'>{exp.duration}</span></h3> 
@@ -109,10 +109,10 @@ const WorkExperience = () => {
                     }
                  
                     return(
-                    <div className='text-end relative z-[-98] opacity-0 exp-items h-32 w-[50%]  shadow-md shadow-green-100 text-black rounded-3xl border bg-zinc-100 mr-[50%] pr-8' key={i}>
-                       <div className=' p-3 '> 
-                        <h3 className=' font-bold text-3xl'>{exp.role}</h3>
-                        <h3 className='font-bold'>Company: <span className='font-extralight'>{exp.company}</span></h3> 
+                    <div className='text-end relative z-[-98] opacity-0 exp-items  w-[50%]  shadow-md shadow-green-100 text-black rounded-3xl border bg-zinc-100 mr-[50%] pr-8' key={i}>
+                       <div className=' md:p-3 '> 
+                        <h3 className=' font-bold md:text-3xl text-center text-1xl'>{exp.role}</h3>
+                        <h3 className='font-bold mt-2'>Company: <span className='font-extralight'>{exp.company}</span></h3> 
 
                         <h3 className='font-bold'>Period: <span className='font-extralight'>{exp.duration}</span></h3> 
                        </div>

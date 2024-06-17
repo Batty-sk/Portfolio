@@ -6,7 +6,7 @@ import { PROGRAMMING_SKILLS,SOCIAL_LINKS } from '../constants';
 import {me} from "../assests"
 
 
-const About = () => {
+    const About = () => {
     if(!gsap)
         return
     gsap.registerPlugin(ScrollTrigger);
@@ -49,15 +49,15 @@ const About = () => {
         })
     },[])
   return (
-    <section className='h-screen w-full text-black flex flex-col justify-center items-center  bg-[#fffad7] overflow-hidden' id='about'>
+    <section className='md:h-screen h-fit p-1 w-full text-black flex flex-col justify-center items-center  bg-[#fffad7] overflow-hidden' id='about'>
             <div className='about-title p-5 opacity-0'>
                 <h1 className='text-amber-700 font-bold font-mono md:text-5xl text-3xl'>About</h1>    
             </div>
 
             <div className='content-container flex md:flex-row flex-col justify-center items-center gap-5 '>
                     <div className='about-photo  flex flex-col  w-80 '>
-                        <div className='w-full relative z-10  h-full  shadow-md shadow-blue-600'>
-                            <Image src={me} width={400} height={350} alt=''/>
+                        <div className='w-full relative z-10  h-full flex justify-center  '>
+                            <Image src={me} width={''} height={''} className='w-64 md:w-[400px] shadow-md shadow-blue-600' alt=''/>
                             </div>
   
                     </div>
@@ -71,9 +71,9 @@ const About = () => {
                             ))}
                         </ul>
                     </div>
-                    <div className='about-details font-mono  md:max-w-[50%] max-w-[100%] flex flex-col justify-center'>
-                        <p>
-                    I'm a <span className='font-bold text-3xl text-yellow-800 '> Creative Developer </span> with a deep understanding of data structures, algorithms, system design, and full-stack technologies. I love bringing imaginative projects to life, blending technical expertise with innovative thinking. Whether it's building complex systems or crafting seamless user experiences, I'm passionate about creating solutions that are both functional and inspiring.
+                    <div className='about-details font-mono  md:max-w-[50%] max-w-[95%] flex flex-col justify-center'>
+                        <p className='md:text-start text-justify leading-relaxed'>
+                    I'm a <span className='font-bold md:text-3xl text-2xl text-yellow-800 '> Creative Developer </span> with a deep understanding of data structures, algorithms, system design, and full-stack technologies. I love bringing imaginative projects to life, blending technical expertise with innovative thinking. Whether it's building complex systems or crafting seamless user experiences, I'm passionate about creating solutions that are both functional and inspiring.
                     </p>
 
                     <div className='social-icons w-full '>
