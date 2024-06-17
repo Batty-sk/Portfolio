@@ -11,24 +11,7 @@ const Contact = () => {
     const [name,setName] = useState('')
     const [email,setEmail] =useState('')
     const [message,setMessage ] =useState('')
-    useEffect(()=>{
-        gsap.registerPlugin(ScrollTrigger)
-        gsap.fromTo('.img-container',{
-            y:-200
-        },{
-            y:0,
-            opacity:1,  
-            stagger:0.5,
-            duration:1,
-            ease:'elastic.out',
-            scrollTrigger:{
-                trigger:'#contact',
-                start: 'top center+=100px',
-                end: 'bottom top+=200px',
-                scrub:true,
-            }
-        })
-    },[])
+
 
      const handleSubmit = (e) => {
       e.preventDefault();
@@ -42,7 +25,7 @@ const Contact = () => {
     <section className='h-fit pt-20 pb-10 universe-background ' id='contact'>
     <div className='relative '>
     <div className='md:text-4xl text-2xl font-mono text-white text-center font-bold p-5 relative first-letter:text-5xl first-letter:font-extrabold z-10'>Contact Me</div>
-    {isMobile?null:<div className='img-container opacity-0 absolute top-10 left-10 z-0 '>
+    {isMobile?null:<div className='img-container rotate absolute top-10 left-10 z-0 '>
         <Image src={moon} alt='moon' height={''} width={''} className='md:h-[200px] md:w-[200px] h-[150px] w-[150px] '></Image>
     </div>}
 

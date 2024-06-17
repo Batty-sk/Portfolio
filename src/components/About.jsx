@@ -3,7 +3,8 @@ import gsap from 'gsap'
 import Image from 'next/image';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { PROGRAMMING_SKILLS,SOCIAL_LINKS } from '../constants';
-import {me} from "../assests"
+import {me,bottom_design} from "../assests"
+
 
 
     const About = () => {
@@ -49,7 +50,7 @@ import {me} from "../assests"
         })
     },[])
   return (
-    <section className='md:h-screen h-fit p-1 w-full text-black flex flex-col justify-center items-center  bg-[#fffad7] overflow-hidden' id='about'>
+    <section className='md:h-screen h-fit p-1 w-full text-black flex flex-col justify-center items-center rounded-bl-3xl rounded-br-3xl border-b-4  bg-[#fffad7] overflow-hidden' id='about'>
             <div className='about-title p-5 opacity-0'>
                 <h1 className='text-amber-700 font-bold font-mono md:text-5xl text-3xl'>About</h1>    
             </div>
@@ -82,6 +83,9 @@ import {me} from "../assests"
                     <li key={i} className='social opacity-0 rounded-full p-1  bg-zinc-50 border shadow-md relative cursor-pointer z-0'><Image src={x} height={30} width={30} alt='social'></Image></li>
                 ))}
             </ul>
+           </div>
+           <div className='flex justify-center'>
+            <Image src={bottom_design} alt='' height={''} width={55} className=''></Image>
            </div>
                         </div>
             </div>
