@@ -57,7 +57,7 @@ import {me} from "../assests"
             <div className='content-container flex md:flex-row flex-col justify-center items-center gap-5 '>
                     <div className='about-photo  flex flex-col  w-80 '>
                         <div className='w-full relative z-10  h-full flex justify-center  '>
-                            <Image src={me} width={''} height={''} className='w-64 md:w-[400px] shadow-md shadow-blue-600' alt=''/>
+                            <Image src={me} width={''} height={''} className='w-64 md:w-[400px] shadow-md shadow-black' alt=''/>
                             </div>
   
                     </div>
@@ -72,7 +72,7 @@ import {me} from "../assests"
                         </ul>
                     </div>
                     <div className='about-details font-mono  md:max-w-[50%] max-w-[95%] flex flex-col justify-center'>
-                        <p className='md:text-start text-justify leading-relaxed'>
+                        <p className='md:text-start text-center leading-relaxed'>
                     I'm a <span className='font-bold md:text-3xl text-2xl text-yellow-800 '> Creative Developer </span> with a deep understanding of data structures, algorithms, system design, and full-stack technologies. I love bringing imaginative projects to life, blending technical expertise with innovative thinking. Whether it's building complex systems or crafting seamless user experiences, I'm passionate about creating solutions that are both functional and inspiring.
                     </p>
 

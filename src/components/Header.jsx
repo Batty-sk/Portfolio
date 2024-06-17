@@ -44,7 +44,7 @@ const Header = () => {
   return (
     <header className='fixed top-0 w-full z-50'>
         <nav className='p-4'>
-            <ul className='flex md:justify-end md:flex-row flex-col  items-end  gap-2'> 
+            <ul className='flex md:justify-end md:flex-row flex-col  items-end  md:gap-2 gap-1'> 
                 {HEADER_NAV.map((x,i)=>
                  <a href={x} key={i}>
                 <li className='w-8  h-8 rounded-full shadow-sm shadow-black block hover:bg-yellow-300 transition-all duration-300 cursor-pointer  ' key={i} style={{

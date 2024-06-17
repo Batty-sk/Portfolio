@@ -7,9 +7,10 @@ import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { githubsocial, link } from '../assests'
 import useIsMobile from '../useIsMobile'
 
-const Carosuel = () => {
+const Carosuel = ({next}) => {
   const isMobile =useIsMobile()
-  const [animate, setAnimate] = useState(-1)
+  const [animate, setAnimate] = useState(next)
+  useEffect(()=>{setAnimate(next)},[next])
   useEffect(()=>{
       gsap.registerPlugin(ScrollTrigger)
       gsap.fromTo('.projectds-cards',{
@@ -31,7 +32,6 @@ const Carosuel = () => {
 
   const handleClick = (event,i)=>{
     console.log('clicked',event.target)
-    // check for the card click.
    const click= new Audio('/ps4-select-button.mp3')
     click.play()
     console.log('brohh')
