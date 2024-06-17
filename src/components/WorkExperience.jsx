@@ -76,10 +76,10 @@ const WorkExperience = () => {
 
     },[])
   return (
-    <section className='h-screen overflow-hidden' id='w-experience' ref={containerRef}>
+    <section className='h-screen overflow-hidden ' id='w-experience' ref={containerRef}>
         <div className='relative flex justify-center'>
     <div className='text-black text-center p-3'>
-        <h1 className='text-4xl font-mono font-bold first-letter:text-blue-600 first-letter:text-5xl'>Work Experience</h1>
+        <h1 className=' font-mono font-bold first-letter:text-orange-400 text-5xl'>Work Experience</h1>
         </div>
         <div className='clouds absolute left-[58%] transform -translate-x-1/2  -translate-y-5' id='cloud2'>
             <Image className='cloud' src={cloud} height={250} width={250} alt='cloud' >

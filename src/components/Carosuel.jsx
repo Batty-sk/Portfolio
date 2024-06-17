@@ -5,6 +5,7 @@ import { PROJECTS } from '../constants'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { githubsocial, link } from '../assests'
+import { clicksound } from '../assests'
 
 const Carosuel = () => {
   const [animate, setAnimate] = useState(-1)
@@ -30,7 +31,9 @@ const Carosuel = () => {
   const handleClick = (event,i)=>{
     console.log('clicked',event.target)
     // check for the card click.
-
+   const click= new Audio('/ps4-select-button.mp3')
+    click.play()
+    console.log('brohh')
     setAnimate(i)
   }
 

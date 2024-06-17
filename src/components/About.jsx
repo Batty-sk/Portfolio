@@ -3,6 +3,7 @@ import gsap from 'gsap'
 import Image from 'next/image';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { PROGRAMMING_SKILLS,SOCIAL_LINKS } from '../constants';
+import {me} from "../assests"
 
 
 const About = () => {
@@ -13,20 +14,24 @@ const About = () => {
     useEffect(()=>{
         
         gsap.fromTo('.social',{
-            y:-200,
+            x:-50,
         },{
-            y:0,
+            x:0,
+            opacity:1,
             stagger:0.3,
-            delay:4,
+            delay:3,
+            ease:'circ',
             scrollTrigger:{
                 trigger:'#about'
             }
         })
         gsap.fromTo('.programming-skill',{
-            x:-200,
+            y:-50,
         },{
-            x:0,
-            stagger:0.5,
+            y:0,
+            stagger:0.2,
+            duration:1,
+            ease:'bounce',
             scrollTrigger:{
                 trigger:'#about'
             }
@@ -46,34 +51,39 @@ const About = () => {
   return (
     <section className='h-screen w-full text-black flex flex-col justify-center items-center  bg-[#fffad7] overflow-hidden' id='about'>
             <div className='about-title p-5 opacity-0'>
-                <h1 className='text-amber-700 font-bold font-mono text-4xl'>About</h1>    
+                <h1 className='text-amber-700 font-bold font-mono md:text-5xl text-3xl'>About</h1>    
             </div>
 
-            <div className='content-container flex justify-center gap-5 '>
-                    <div className='about-photo  flex flex-col  w-80'>
-                        <div className='w-full relative z-10 bg-[#f7f1c6] h-full border'>
-                            Photu</div>
-            <div className='social-icons w-full '>
-            <ul className='socials w-full p-3 flex justify-center'>
-                {SOCIAL_LINKS.map((x,i)=>(
-                    <li key={i} className='social relative cursor-pointer z-0'><Image src={x} height={30} width={30} alt='social'></Image></li>
-                ))}
-            </ul>
-           </div>
+            <div className='content-container flex md:flex-row flex-col justify-center items-center gap-5 '>
+                    <div className='about-photo  flex flex-col  w-80 '>
+                        <div className='w-full relative z-10  h-full  shadow-md shadow-blue-600'>
+                            <Image src={me} width={400} height={350} alt=''/>
+                            </div>
+  
                     </div>
 
-                    <div className='about-skills'>
-                        <ul className='flex flex-col gap-1 flex-wrap max-h-80 '>
+                    <div className='about-skills h-full flex justify-center items-center'>
+                        <ul className='flex md:flex-col gap-1 flex-wrap  max-h-80 justify-center items-center '>
                             {PROGRAMMING_SKILLS.map((x,i)=>(
-                                <li key={i} className='programming-skill'>
+                                <li key={i} className='programming-skill p-1 bg-zinc-50 border shadow-md rounded-full'>
                                     <Image src={x} height={40} width={40} alt={'skill'}></Image>
                                 </li>
                             ))}
                         </ul>
                     </div>
-                    <div className='about-details font-mono max-w-[50%] flex justify-center'>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde at quod mollitia, natus incidunt aliquid placeat veritatis optio quos. Repudiandae, repellendus quis error eius non deleniti fuga architecto laboriosam obcaecati quisquam vitae eaque. Omnis enim soluta voluptates, animi dolorum laboriosam deserunt praesentium, labore incidunt sapiente facilis commodi pariatur quidem cupiditate vitae nemo nesciunt corporis magnam, natus at excepturi placeat ut! Ipsum tempora provident necessitatibus soluta eos excepturi quibusdam consequuntur voluptas? Amet, eos recusandae repudiandae iure aliquid doloribus nihil quos odio, dolor nam, hic facere aut ut aspernatur tempore magni ipsa necessitatibus exercitationem libero voluptatum corporis! Fugit cupiditate accusantium eaque nesciunt?
-                    </div>
+                    <div className='about-details font-mono  md:max-w-[50%] max-w-[100%] flex flex-col justify-center'>
+                        <p>
+                    I'm a <span className='font-bold text-3xl text-yellow-800 '> Creative Developer </span> with a deep understanding of data structures, algorithms, system design, and full-stack technologies. I love bringing imaginative projects to life, blending technical expertise with innovative thinking. Whether it's building complex systems or crafting seamless user experiences, I'm passionate about creating solutions that are both functional and inspiring.
+                    </p>
+
+                    <div className='social-icons w-full '>
+                            <ul className='socials w-full p-3 gap-1 flex justify-center'>
+                {SOCIAL_LINKS.map((x,i)=>(
+                    <li key={i} className='social opacity-0 rounded-full p-1  bg-zinc-50 border shadow-md relative cursor-pointer z-0'><Image src={x} height={30} width={30} alt='social'></Image></li>
+                ))}
+            </ul>
+           </div>
+                        </div>
             </div>
 
 

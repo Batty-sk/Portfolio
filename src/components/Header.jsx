@@ -3,7 +3,7 @@ import React from 'react'
 import { HEADER_NAV } from '../constants'
 import { useEffect,useState } from 'react'
 const Header = () => {
-  const [color,setColor] = useState([0,'blue'])
+  const [color,setColor] = useState([0,'rgb(59 130 246)'])
 
 
   useEffect(()=>{
@@ -17,13 +17,13 @@ const Header = () => {
     const handleColorSwitch = (currentSection)=>{
       switch(currentSection){
         case 0:
-          setColor([0,'blue'])
+          setColor([0,'rgb(59 130 246)'])
           break
         case 1:
-          setColor([1,'yellow'])
+          setColor([1,'orange'])
           break
         case 2:
-          setColor([2,'orange'])
+          setColor([2,'pink'])
           break;
         case 3:
             setColor([3,'#f9f7cd'])
@@ -46,7 +46,7 @@ const Header = () => {
         <nav className='p-4'>
             <ul className='flex md:justify-end md:flex-row flex-col  items-end  gap-2'> 
                 {HEADER_NAV.map((x,i)=>
-                 <a href={x}>
+                 <a href={x} key={i}>
                 <li className='w-8  h-8 rounded-full shadow-sm shadow-black block hover:bg-yellow-300 transition-all duration-300 cursor-pointer  ' key={i} style={{
                   background:`${i==color[0]?color[1]:'rgb(244,244,245)'}`
                 }}></li>
