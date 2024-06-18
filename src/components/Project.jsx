@@ -4,6 +4,18 @@ import Carosuel from './Carosuel'
 import Image from 'next/image'
 import { mespace,rightArrow } from '../assests'
 
+const generateStars = (numStars) => {
+  const stars = [];
+  for (let i = 0; i < numStars; i++) {
+    const top = Math.random() * 100; 
+    const left = Math.random() * 100;
+    const delay = Math.random() * 2; 
+    stars.push({ id: i, top, left, delay });
+  }
+  return stars;
+};
+const stars = generateStars(100);
+
 const Project = () => {
   const [next,setNext] = useState(0)
   const handleNext = ()=>{
@@ -13,7 +25,8 @@ const Project = () => {
       click.play()
   }
   return (
-    <section className='md:h-[140vh]  h-screen universe-background-rev ' id='projects'>
+    <section className='md:h-[140vh] relative rounded-tl-3xl rounded-tr-3xl h-screen universe-background-rev ' id='projects'>
+
         <div className=' flex justify-center ocean gap-1 pt-10'>
           <Image src={mespace} width={68} height={68} alt='.' className=''></Image>
             <h1 className='text-white md:text-4xl text-2xl text-center font-mono font-bold first-letter:text-6xl'>Projects</h1>
@@ -26,7 +39,18 @@ const Project = () => {
         <Carosuel next={next}/>
 
         </div>
-        
+        {stars.map((star) => (
+        <div
+          key={star.id}
+          className='star'
+          style={{
+            top: `${star.top}%`,
+            left: `${star.left}%`,
+            animationDelay: `${star.delay}s`,
+
+          }}
+        ></div>
+      ))}
     </section>
   )
 }
