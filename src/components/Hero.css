@@ -7,19 +7,35 @@
       transform: translateY(0) translateZ(0);
     }
     50% {
-      transform: translateY(-10px) translateZ(0); /* Adjust wave height as needed */
+      transform: translateY(-10px) translateZ(0); 
     }
     100% {
       transform: translateY(0) translateZ(0);
     }
   }
   
+  @keyframes wave-projects {
+    0% {
+      y:-100px;
+    }
+    50% {
+      y:0px; 
+    }
+    100% {
+     y:100px
+    }
+  }
 
   
   .ocean img {
-    animation: wave-animation 2s ease-in-out infinite; /* Adjust animation duration and timing function */
+    animation: wave-animation 2s ease-in-out infinite; 
   }
-  
+  .float{
+    animation: wave-animation 3s ease-in-out infinite;
+  }
+  .floating{
+    animation: wave-projects 3s ease-in-out;
+  }
 @keyframes spin {
     from {
       transform: rotate(0deg);

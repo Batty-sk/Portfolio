@@ -5,7 +5,9 @@ import { useEffect } from 'react'
 import Image from 'next/image'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import useIsMobile from '../useIsMobile'
+import { generateStars } from './Project'
 
+const stars = generateStars(100)
 const Contact = () => {
     const isMobile = useIsMobile()
     const [name,setName] = useState('')
@@ -22,15 +24,27 @@ const Contact = () => {
     };
     
   return (
-    <section className='h-fit pt-20 pb-10 universe-background ' id='contact'>
+    <section className='h-fit pt-20 contact mt-5 relative pb-10 universe-background rounded-tl-3xl  rounded-tr-3xl' id='contact'>
+           {stars.map((star) => (
+        <div
+          key={star.id}
+          className='star'
+          style={{
+            top: `${star.top}%`,
+            left: `${star.left}%`,
+            animationDelay: `${star.delay}s`,
+
+          }}
+        ></div>
+      ))}
     <div className='relative '>
-    <div className='md:text-4xl text-2xl font-mono text-white text-center font-bold p-5 relative first-letter:text-5xl first-letter:font-extrabold z-10'>Contact Me</div>
-    {isMobile?null:<div className='img-container rotate absolute top-10 left-10 z-0 '>
+    <div className='md:text-4xl text-2xl font-mono text-white text-center font-bold p-5 relative first-letter:text-6xl first-letter:font-extrabold z-10'>Contact Me</div>
+    {isMobile?null:<div className='img-container rotate absolute top-10 left-10 z-0 '> 
         <Image src={moon} alt='moon' height={''} width={''} className='md:h-[200px] md:w-[200px] h-[150px] w-[150px] '></Image>
     </div>}
 
      <div className='contact-form flex justify-center'>
-     <form onSubmit={handleSubmit} className="bg-[#ffffff15] text-white  relative z-20 font-mono md:w-[70%] w-[90%] p-8 rounded-lg shadow-lg max-w-lg">
+     <form onSubmit={handleSubmit} className="bg-[#ffffff15] float text-white  contact-forms relative z-20 font-mono md:w-[70%] w-[90%] p-8 rounded-lg shadow-lg max-w-lg">
         <div className="mb-4">
           <label className="block text-sm font-bold mb-2" htmlFor="name">
             Name
@@ -72,7 +86,7 @@ const Contact = () => {
         </div>
         <div className="text-center">
           <button
-            className="bg-blue-500 hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
+            className="bg-black hover:bg-cyan-700 text-white font-bold py-3 px-6 rounded focus:outline-none focus:ring-2 focus:ring-cyan-500"
             type="submit"
           >
             Send Message

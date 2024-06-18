@@ -4,7 +4,7 @@ import Carosuel from './Carosuel'
 import Image from 'next/image'
 import { mespace,rightArrow } from '../assests'
 
-const generateStars = (numStars) => {
+export const generateStars = (numStars) => {
   const stars = [];
   for (let i = 0; i < numStars; i++) {
     const top = Math.random() * 100; 
@@ -25,7 +25,7 @@ const Project = () => {
       click.play()
   }
   return (
-    <section className='md:h-[140vh] relative rounded-tl-3xl rounded-tr-3xl h-screen universe-background-rev ' id='projects'>
+    <section className='md:h-[140vh] relative rounded-tl-3xl rounded-tr-3xl h-screen universe-background-rev rounded-bl-3xl rounded-br-3xl ' id='projects'>
 
         <div className=' flex justify-center ocean gap-1 pt-10'>
           <Image src={mespace} width={68} height={68} alt='.' className=''></Image>

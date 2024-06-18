@@ -27,7 +27,7 @@ const Carosuel = ({next}) => {
       }
 
     })
-
+  
   },[])
 
   const handleClick = (event,i)=>{
@@ -43,10 +43,11 @@ const Carosuel = ({next}) => {
     <div className='relative w-[90%] max-h-full md:p-0   border border-white flex justify-center '>
         {PROJECTS.map((x,i)=>{
           return(
-            <div key={i} onClick={(x)=>handleClick(x,i)}  className={`absolute cursor-pointer transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-orange-500 hover:scale-105  projects-cards md:w-80 w-[17rem] flex flex-col justify-center shadow-md transform shadow-black items-center -translate-x-1/2 bg-zinc-200 rounded-md  pt-10  -translate-y-1/2 right-1/2 `} style={{
+            <div key={i} onClick={(x)=>handleClick(x,i)}  className={`absolute  cursor-pointer transition-all duration-300 ease-in-out hover:shadow-md hover:shadow-orange-500 hover:scale-105  projects-cards md:w-80 w-[17rem] flex flex-col justify-center shadow-md transform shadow-black items-center -translate-x-1/2 bg-zinc-200 rounded-md  pt-10  -translate-y-1/2 right-1/2 `} style={{
               left:isMobile?`${60-(i*3)}%`:`${60-(i*8)}%`,
               rotate:isMobile?`-${i*3}deg`:`-${i*5}deg`,
               zIndex:`${animate==i?99:50-(i*10)}`,
+              animationDelay:i+1+'ms',
               
             }}>
              <div className='relative w-full h-full flex flex-col md:gap-3 gap-0 justify-center items-center'>

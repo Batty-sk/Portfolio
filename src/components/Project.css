@@ -19,9 +19,17 @@
     transition: all 500ms;
     animation: animateCard 1s ease-in-out;
   }
-  .float{
-
+  .contact{
+background: radial-gradient(circle at center center, #8d8e2d87, #1f133f 70%), #761474;;
+box-shadow: 0px -10px 10px palevioletred;
   }
+  .contact-forms{
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 5;
+    border-top-right-radius: 20%;
+    box-shadow: 5px 5px 2px antiquewhite;
+}
+  
 
   @keyframes animateCard
   {
