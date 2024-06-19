@@ -21,7 +21,7 @@
   }
   .contact{
 background: radial-gradient(circle at center center, #8d8e2d87, #1f133f 70%), #761474;;
-box-shadow: 0px -10px 10px palevioletred;
+box-shadow: 0px -10px 9px palevioletred;
   }
   .contact-forms{
     border-bottom-left-radius: 20%;
@@ -47,7 +47,7 @@ box-shadow: 0px -10px 10px palevioletred;
     position: absolute;
     width: 2px;
     height: 2px;
-    background-color: white;
+    background-color: rgb(245, 248, 201);
     border-radius: 50%;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     animation: glow 2s infinite alternate;
@@ -62,4 +62,10 @@ box-shadow: 0px -10px 10px palevioletred;
       transform: scale(1.5);
     }
   }
-  
+  #w-experience{
+    background: #fafcff;
+    
+  }
+  .exp-items{
+    background: ivory ;
+  }
