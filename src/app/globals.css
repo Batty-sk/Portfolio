@@ -28,6 +28,9 @@
   background-color: #654321; 
 }
 
+.header-circles{
+  box-shadow: 1px 1px 3px black;
+}
 
 body {
   color: rgb(var(--foreground-rgb));

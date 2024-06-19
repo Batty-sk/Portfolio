@@ -68,4 +68,5 @@ box-shadow: 0px -10px 9px palevioletred;
   }
   .exp-items{
     background: ivory ;
+    border-top: 3px solid blue;
   }
