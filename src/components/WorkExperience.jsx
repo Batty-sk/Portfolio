@@ -93,11 +93,11 @@ const WorkExperience = () => {
 
         <div className='relative flex justify-center items-center h-full overflow-hidden'>
             <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-[#987070] border-x-4 z-0'></div>
-            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full bg-cyan-400 z-20' id='rounded-me'></div>
+            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full bg-cyan-400 md:z-20 z-10' id='rounded-me'></div>
             <div className=' font-mono exp-container h-full w-full md:p-5 p-1  flex flex-col md:justify-around justify-center md:gap-0 gap-12 items-center'>
                 {WORK_EXPERIENCE.map((exp,i)=>{
                     if(i){
-                    return <div className='text-start relative z-10 opacity-0 exp-items w-[50%]  shadow-lg shadow-[#73a3ba]  text-black rounded-3xl    ml-[50%] pl-8' key={i}>
+                    return <div className='text-start relative z-10 opacity-0 exp-items md:w-[50%] w-full  shadow-lg shadow-[#73a3ba]  text-black rounded-3xl    ml-[50%] pl-8' key={i}>
                        <div className=' p-3 '> 
                         <h3 className=' font-bold md:text-2xl text-1xl'  style={{color:'darkblue'}}>{exp.role}</h3>
                         <h3 className='font-bold'>Company: <span className='font-extralight'>{exp.company}</span></h3> 
@@ -109,10 +109,10 @@ const WorkExperience = () => {
                     }
                  
                     return(
-                    <div className='text-end relative z-10 opacity-0 exp-items  w-[50%]  shadow-lg shadow-[#73a3ba] text-black rounded-3xl   bg-[#DBB5B5] mr-[50%] pr-8' key={i}>
-                       <div className=' md:p-3 '> 
+                    <div className='text-end relative z-10 opacity-0 exp-items  md:w-[50%] w-full  shadow-lg shadow-[#73a3ba] text-black rounded-3xl   bg-[#DBB5B5] mr-[50%] pr-8' key={i}>
+                       <div className='p-3 '> 
                         <h3 className=' font-bold md:text-2xl  text-1xl ' style={{color:'darkblue'}}>{exp.role}</h3>
-                        <h3 className='font-bold mt-2'>Company: <span className='font-extralight'>{exp.company}</span></h3> 
+                        <h3 className='font-bold'>Company: <span className='font-extralight'>{exp.company}</span></h3> 
 
                         <h3 className='font-bold'>Period: <span className='font-extralight'>{exp.duration}</span></h3> 
                        </div>
