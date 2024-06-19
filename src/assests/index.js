@@ -23,4 +23,5 @@ import me from "./me.jpg"
 import clicksound from "./ps4-select-button.mp3"
 import rightArrow from "./icons8-right-arrow-96.png"
 import bottom_design from "./bottom_design.png"
-export {bottom_design,sun,ocean,cplus,c,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual,mespace,clicksound,me,rightArrow,mongo}
+import me_ from "./me_.jpg"
+export {me_,bottom_design,sun,ocean,cplus,c,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual,mespace,clicksound,me,rightArrow,mongo}

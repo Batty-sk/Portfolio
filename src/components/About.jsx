@@ -14,6 +14,17 @@ import {me,bottom_design} from "../assests"
 
     useEffect(()=>{
         
+        gsap.to('#me',{
+            borderRadius:'50%',
+            duration:1,
+            ease:'circ',
+            scrollTrigger:{
+                trigger:'#about',
+                start:'top center',
+                end:'bottom top',
+                scrub:true,
+            }
+        })
         gsap.fromTo('.social',{
             x:-50,
         },{
@@ -58,7 +69,7 @@ import {me,bottom_design} from "../assests"
             <div className='content-container flex md:flex-row flex-col justify-center items-center gap-5 '>
                     <div className='about-photo  flex flex-col  w-80 '>
                         <div className='w-full relative z-10  h-full flex justify-center  '>
-                            <Image src={me} width={''} height={''} className='w-64 md:w-[400px] shadow-md shadow-black' alt=''/>
+                            <Image src={me} width={''} height={''} className='w-64 md:w-[400px] shadow-md shadow-black' alt='' id='me'/>
                             </div>
   
                     </div>

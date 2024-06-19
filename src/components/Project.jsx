@@ -29,7 +29,7 @@ const Project = () => {
 
         <div className=' flex justify-center ocean gap-1 pt-10'>
           <Image src={mespace} width={68} height={68} alt='.' className=''></Image>
-            <h1 className='text-white md:text-4xl text-2xl text-center font-mono font-bold first-letter:text-6xl'>Projects</h1>
+            <h1 className='text-white md:text-4xl text-2xl text-center font-mono font-bold md:first-letter:text-6xl first-letter:text-3xl'>Projects</h1>
         </div>
         <div className='flex justify-center  ' > <Image src={rightArrow} height={80} onClick={handleNext} width={80} className='transition-all duration-150 cursor-pointer hover:scale-125 z-[99]' alt=''></Image></div>
 

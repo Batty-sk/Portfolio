@@ -5,6 +5,7 @@ import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { WORK_EXPERIENCE } from '../constants';
 import { Dancing_Script } from 'next/font/google'
+import { me_ } from '../assests';
 
 
 const DS_font = Dancing_Script({ subsets: ['latin'] ,weight: ['400', '700']})
@@ -92,8 +93,10 @@ const WorkExperience = () => {
         </div>
 
         <div className='relative flex justify-center items-center h-full overflow-hidden'>
-            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-[#987070] border-x-4 z-0'></div>
-            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full bg-cyan-400 md:z-20 z-10' id='rounded-me'></div>
+            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-[#865f5f] border-x-8 z-0 rounded-tl-[50%] rounded-tr-[50%]'></div>
+            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full bg-cyan-400 md:z-20 z-10' id='rounded-me'>
+            <Image src={me_} alt='' className='h-full w-full rounded-full'></Image>
+            </div>
             <div className=' font-mono exp-container h-full w-full md:p-5 p-1  flex flex-col md:justify-around justify-center md:gap-0 gap-12 items-center'>
                 {WORK_EXPERIENCE.map((exp,i)=>{
                     if(i){

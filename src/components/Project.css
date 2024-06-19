@@ -6,6 +6,7 @@
   .universe-background-rev {
     background: radial-gradient(circle at center bottom, #2f6292, transparent 70%), #090a0f;
     position: relative;
+    box-shadow: 0px -2px 10px #1f133f;
     overflow: hidden;  
   }
   .onhover{
@@ -20,8 +21,8 @@
     animation: animateCard 1s ease-in-out;
   }
   .contact{
-background: radial-gradient(circle at center center, #8d8e2d87, #1f133f 70%), #761474;;
-box-shadow: 0px -10px 9px palevioletred;
+background: radial-gradient(circle at center center, #8d8e2d87, #1f133f 51%), #761474;;
+box-shadow: 0px -10px 7px #1f133f;
   }
   .contact-forms{
     border-bottom-left-radius: 20%;

@@ -23,7 +23,7 @@ const Header = () => {
           setColor([1,'orange'])
           break
         case 2:
-          setColor([2,'pink'])
+          setColor([2,'#67e8ca'])
           break;
         case 3:
             setColor([3,'#f9f7cd'])

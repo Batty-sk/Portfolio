@@ -14,8 +14,10 @@ const Hero = () => {
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
 
-    gsap.to('#sun', {
-      y: 500,
+    gsap.fromTo('#sun',{
+    
+    }, {
+      y: 400,
       rotation: 180,
       ease: 'power1.inOut',
       duration: 1,

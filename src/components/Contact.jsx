@@ -38,7 +38,7 @@ const Contact = () => {
         ></div>
       ))}
     <div className='relative '>
-    <div className='md:text-4xl text-2xl font-mono text-white text-center font-bold p-5 relative first-letter:text-6xl first-letter:font-extrabold z-10'>Contact Me</div>
+    <div className='md:text-4xl text-2xl font-mono text-white text-center font-bold p-5 relative md:first-letter:text-6xl  first-letter:text-3xl first-letter:font-extrabold z-10' style={{color:'lavenderblush'}}>Contact Me</div>
     {isMobile?null:<div className='img-container rotate absolute top-10 left-10 z-0 '> 
         <Image src={moon} alt='moon' height={''} width={''} className='md:h-[200px] md:w-[200px] h-[150px] w-[150px] '></Image>
     </div>}
