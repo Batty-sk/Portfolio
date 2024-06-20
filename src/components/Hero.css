@@ -25,7 +25,9 @@
      y:100px
     }
   }
-
+  #hero{
+    background:linear-gradient(138deg, #fff5b9, white);
+  }
   
   .ocean img {
     animation: wave-animation 2s ease-in-out infinite; 
