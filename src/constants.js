@@ -5,7 +5,7 @@ export const PROGRAMMING_SKILLS = [c,cplus,react,typescript,python,mysql,githubs
 export const SOCIAL_LINKS = [{img:githubsocial,link:'https://github.com/Batty-sk'},{img:linkedin,link:'https://www.linkedin.com/in/saurav-kumar-5225a2292/'},{img:instagram, link:''}]
 
 export const WORK_EXPERIENCE = [{role:'Full Stack Intern',company:'Hoping Minds',duration:'6 months'},
-    {role:'Fronted Developer',company:'Texium Solutions',duration:'working'}
+    {role:'Frontend Developer',company:'Texium Solutions',duration:'working'}
 ]
 
 export const PROJECTS = [{
