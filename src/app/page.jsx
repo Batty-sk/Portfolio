@@ -7,7 +7,23 @@ import About from "../components/About"
 import WorkExperience from "../components/WorkExperience"
 import Project from "../components/Project"
 import Contact from "../components/Contact"
+import Loader from "../components/Loader" 
+import { useEffect,useState } from "react"
 const page = () => {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1500);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (loading) {
+    return <Loader />;
+  }
   return (
     <main>
     <Header />

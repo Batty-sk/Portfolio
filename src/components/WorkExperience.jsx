@@ -94,10 +94,10 @@ const WorkExperience = () => {
 
         <div className='relative flex justify-center items-center h-full overflow-hidden'>
             <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-[#865f5f] border-x-8 z-0 rounded-tl-[50%] rounded-tr-[50%]'></div>
-            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full bg-cyan-400 md:z-20 z-10' id='rounded-me'>
+            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full md:z-20 z-10' id='rounded-me' style={{    boxShadow: '1px 1px 5px crimson;'}}>
             <Image src={me_} alt='' className='h-full w-full rounded-full'></Image>
             </div>
-            <div className=' font-mono exp-container h-full w-full md:p-5 p-1  flex flex-col md:justify-around justify-center md:gap-0 gap-12 items-center'>
+            <div className=' font-mono exp-container h-full w-full md:pl-20 md:pr-20 p-1  flex flex-col md:justify-around justify-center md:gap-0 gap-12 items-center'>
                 {WORK_EXPERIENCE.map((exp,i)=>{
                     if(i){
                     return <div className='text-start relative z-10 opacity-0 exp-items md:w-[50%] w-full  shadow-lg shadow-[#73a3ba]  text-black rounded-3xl    ml-[50%] pl-8' key={i}>

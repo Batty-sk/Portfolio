@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect,useRef } from 'react';
 import Image from 'next/image';
 import { sun, ocean } from '../assests'; // Adjust the path as per your project structure
 import gsap from 'gsap';
@@ -11,11 +11,20 @@ const DS_font = Dancing_Script({ subsets: ['latin'] ,weight: ['400', '700']})
 
 
 const Hero = () => {
-  useEffect(() => {
-    gsap.registerPlugin(ScrollTrigger);
+  const sunRef = useRef(null);
 
-    gsap.fromTo('#sun',{
-    
+  useEffect(() => {
+
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.to(sunRef.current, {
+      rotation: 360,
+      duration: 10,
+      repeat: -1,
+      ease: 'linear'
+    });
+
+    gsap.fromTo(sunRef.current,{
+      y:0,
     }, {
       y: 400,
       rotation: 180,
@@ -25,7 +34,8 @@ const Hero = () => {
         trigger: '#hero',
         start: 'top top+=150',
         end: 'bottom top',
-        scrub: true,
+        scrub: true, 
+        
       },
     });
 
@@ -52,7 +62,7 @@ const Hero = () => {
     <section id='hero' className='md:h-screen  h-[95vh] relative  flex flex-col justify-center items-center'
     style={{background:'linear-gradient(45deg, #fffce0, white);'}}>
       <div className='absolute top-0 left-0 z-0'>
-        <Image src={sun} height={152} width={152} id='sun' priority className='sun' alt='sun' />
+        <Image src={sun} height={152} width={152} id='sun' priority  ref={sunRef} alt='sun' />
       </div>
 
       <div className='text-container opacity-0'>
