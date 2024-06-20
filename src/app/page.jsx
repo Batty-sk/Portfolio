@@ -9,7 +9,7 @@ import Project from "../components/Project"
 import Contact from "../components/Contact"
 import Loader from "../components/Loader" 
 import { useEffect,useState } from "react"
-const page = () => {
+const Page = () => {
 
   const [loading, setLoading] = useState(true);
 
@@ -36,4 +36,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
