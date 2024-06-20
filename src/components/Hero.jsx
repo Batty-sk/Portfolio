@@ -22,6 +22,7 @@ const Hero = () => {
       repeat: -1,
       ease: 'linear'
     });
+    
 
     gsap.fromTo(sunRef.current,{
       y:0,
@@ -49,6 +50,7 @@ const Hero = () => {
         {
           y: 0, 
           bottom:0,
+          delay:1,
           opacity: 1, 
           duration: 1, 
           ease: 'power3.out', 
@@ -59,8 +61,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section id='hero' className='md:h-screen  h-[95vh] relative  flex flex-col justify-center items-center'
-    style={{background:'linear-gradient(45deg, #fffce0, white);'}}>
+    <section id='hero' className='md:h-screen  h-[95vh] relative  flex flex-col bg-custom-gradient justify-center items-center'
+   >
       <div className='absolute top-0 left-0 z-0'>
         <Image src={sun} height={152} width={152} id='sun' priority  ref={sunRef} alt='sun' />
       </div>

@@ -27,6 +27,7 @@ const Carosuel = ({next}) => {
       }
 
     })
+    
   
   },[])
 
