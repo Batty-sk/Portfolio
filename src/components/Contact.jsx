@@ -1,9 +1,6 @@
 import React, { useState } from 'react'
 import { moon } from '../assests'
-import gsap from 'gsap'
-import { useEffect } from 'react'
 import Image from 'next/image'
-import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import useIsMobile from '../useIsMobile'
 import { generateStars } from './Project'
 import { Dancing_Script } from 'next/font/google'
