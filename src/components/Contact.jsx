@@ -6,6 +6,11 @@ import Image from 'next/image'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import useIsMobile from '../useIsMobile'
 import { generateStars } from './Project'
+import { Dancing_Script } from 'next/font/google'
+
+
+const DS_font = Dancing_Script({ subsets: ['latin'] ,weight: ['400', '700']})
+
 
 const stars = generateStars(100)
 const Contact = () => {
@@ -94,7 +99,9 @@ const Contact = () => {
         </div>
       </form>
      </div>
-    
+    <div className={`pt-5 mt-5 ${DS_font.className} text-center text-white`}><p>Saorav.skumar@gmail.com</p>
+     <p>+91 9730129156</p>
+    </div>
     </div>
     </section>
   )

@@ -9,6 +9,7 @@ import Project from "../components/Project"
 import Contact from "../components/Contact"
 import Loader from "../components/Loader" 
 import { useEffect,useState } from "react"
+import PatternDivider from "../components/PatternDivider"
 const Page = () => {
 
   const [loading, setLoading] = useState(true);

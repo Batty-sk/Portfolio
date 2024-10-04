@@ -1,6 +1,6 @@
 import React, { useEffect,useRef } from 'react'
 import Image from 'next/image'
-import { cloud } from '../assests'
+import { cloud, pattern } from '../assests'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/dist/ScrollTrigger';
 import { WORK_EXPERIENCE } from '../constants';
@@ -82,18 +82,19 @@ const WorkExperience = () => {
     <div className='text-black text-center p-3'>
         <h1 className=' font-mono font-bold  first-letter:text-5xl md:text-4xl text-3xl' style={{color:'darkslateblue'}}>Work Experience</h1>
         </div>
-        <div className='clouds absolute left-[58%] transform -translate-x-1/2  -translate-y-5' id='cloud2'>
+        <div className='clouds absolute left-[58%] z-10 transform -translate-x-1/2  -translate-y-5' id='cloud2'>
             <Image className='cloud' src={cloud} height={250} width={250} alt='cloud' >
             </Image>
         </div>
-        <div className='clouds absolute left-[43%] transform -translate-x-1/2  -translate-y-5' id='cloud1'>
+        <div className='clouds absolute left-[43%] z-10 transform -translate-x-1/2  -translate-y-5' id='cloud1'>
             <Image className='cloud' src={cloud} height={250} width={250} alt='cloud' >
             </Image>
         </div>
         </div>
 
         <div className='relative flex justify-center items-center h-full overflow-hidden'>
-            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-[#865f5f] border-x-8 z-0 rounded-tl-[50%] rounded-tr-[50%]'></div>
+            <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 w-2 border-[#865f5f] border-x-8 z-[1] rounded-tl-[50%] rounded-tr-[50%]'></div>
+            <Image src={pattern} className='absolute z-0 -rotate-90' alt='ptrn'></Image>
             <div className='absolute left-1/2 -translate-x-1/2 border top-0 bottom-0 block h-20 w-20 rounded-full md:z-20 z-10' id='rounded-me' style={{    boxShadow: '1px 1px 5px crimson;'}}>
             <Image src={me_} alt='' className='h-full w-full rounded-full'></Image>
             </div>

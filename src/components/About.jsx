@@ -4,7 +4,8 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { PROGRAMMING_SKILLS, SOCIAL_LINKS } from '../constants';
-import { me, bottom_design } from '../assests';
+import { me, bottom_design, me_formal } from '../assests';
+import ThreeBalls from './ThreeBalls';
 
 const About = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -103,17 +104,13 @@ const About = () => {
             I&apos;m a <span className="font-bold md:text-3xl text-2xl text-blue-900">Creative Developer</span> with a deep understanding of data structures, algorithms, system design, and full-stack technologies. I love bringing imaginative projects to life, blending technical expertise with innovative thinking. Whether it&apos;s building complex systems or crafting seamless user experiences, I&apos;m passionate about creating solutions that are both functional and inspiring.
           </p>
 
-          <div className="social-icons w-full ">
-            <ul className="socials w-full p-3 gap-1 flex justify-center">
+          <div className="flex justify-center">
               {SOCIAL_LINKS.map((x, i) => (
-                <li key={i} className="social opacity-0 rounded-full p-1 bg-zinc-50 border shadow-md relative cursor-pointer z-0">
-                  <a href={x.link} target="_blank">
+                  <a href={x.link} target="_blank" className='block h-24 w-20' >
                     {' '}
-                    <Image src={x.img} height={30} width={30} alt="social" />
-                  </a>
-                </li>
+                    <ThreeBalls texture_name={x.texture_name} dIntensity={4.3} />
+                    </a>
               ))}
-            </ul>
           </div>
           <div className="flex justify-center">
             <Image src={bottom_design} alt="" height={''} width={55} className="" />

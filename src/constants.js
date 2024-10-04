@@ -2,7 +2,7 @@ import {cinflix,c,cplus,react,typescript,gcp,mysql,python,instagram,linkedin,git
 export const HEADER_NAV = ["#hero","#about","#w-experience","#projects"]
 
 export const PROGRAMMING_SKILLS = [c,cplus,react,typescript,python,mysql,githubsocial,gcp,mongo]
-export const SOCIAL_LINKS = [{img:githubsocial,link:'https://github.com/Batty-sk'},{img:linkedin,link:'https://www.linkedin.com/in/saurav-kumar-5225a2292/'},{img:instagram, link:''}]
+export const SOCIAL_LINKS = [{texture_name:'github_texture',link:'https://github.com/Batty-sk'},{texture_name:'linkdin_texture',link:'https://www.linkedin.com/in/saurav-kumar-5225a2292/'},{texture_name:'instagram_texture', link:''}]
 
 export const WORK_EXPERIENCE = [{role:'Full Stack Intern',company:'Hoping Minds',duration:'6 months'},
     {role:'Frontend Developer',company:'Texium Solutions',duration:'working'}
