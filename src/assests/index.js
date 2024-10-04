@@ -25,5 +25,4 @@ import rightArrow from "./icons8-right-arrow-96.png"
 import bottom_design from "./bottom_design.png"
 import me_ from "./me_.jpg"
 import pattern from "./pattern.svg"
-import me_formal from "./me_formal.png"
-export {me_formal,me_,bottom_design,sun,ocean,cplus,c,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual,mespace,clicksound,me,rightArrow,mongo,pattern}
+export {me_,bottom_design,sun,ocean,cplus,c,gcp,mysql,python,react,typescript,githubsocial,linkedin,instagram,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual,mespace,clicksound,me,rightArrow,mongo,pattern}

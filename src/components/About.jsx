@@ -4,7 +4,7 @@ import gsap from 'gsap';
 import Image from 'next/image';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { PROGRAMMING_SKILLS, SOCIAL_LINKS } from '../constants';
-import { me, bottom_design, me_formal } from '../assests';
+import { me, bottom_design } from '../assests';
 import ThreeBalls from './ThreeBalls';
 
 const About = () => {
@@ -106,7 +106,7 @@ const About = () => {
 
           <div className="flex justify-center">
               {SOCIAL_LINKS.map((x, i) => (
-                  <a href={x.link} target="_blank" className='block h-24 w-20' >
+                  <a href={x.link} target="_blank" className='block h-24 w-20' key={i} >
                     {' '}
                     <ThreeBalls texture_name={x.texture_name} dIntensity={4.3} />
                     </a>
