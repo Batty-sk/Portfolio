@@ -26,4 +26,5 @@ import rightArrow from "./icons8-right-arrow-96.png"
 import bottom_design from "./bottom_design.png"
 import me_ from "./me_.jpg"
 import pattern from "./pattern.svg"
-export {me_,bottom_design,sun,ocean,retrodrive, cplus,c,gcp,mysql,python,react,typescript,githubsocial,linkedin,leetcode,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual,mespace,clicksound,me,rightArrow,mongo,pattern}
+import nft_marketplace from "./nft_marketplace.png"
+export {me_,bottom_design,sun,ocean,retrodrive,nft_marketplace, cplus,c,gcp,mysql,python,react,typescript,githubsocial,linkedin,leetcode,cloud,moon, link,cinflix,magiccards,quiz,algorithmvisual,mespace,clicksound,me,rightArrow,mongo,pattern}
