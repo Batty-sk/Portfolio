@@ -75,7 +75,9 @@ const Hero = () => {
       </div>
       <div className='absolute bottom-0 left-0 right-0 z-1 w-full'>
         <div className='ocean '>
-          <Image src={ocean}  width={''} height={''} objectFit='cover'  alt='ocean'/>
+          <Image src={ocean} style={{
+                width: '-webkit-fill-available'
+          }}  alt='ocean'/>
         </div>
       </div>
     </section>

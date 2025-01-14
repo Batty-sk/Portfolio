@@ -84,9 +84,11 @@ const About = () => {
       </div>
 
       <div className="content-container flex md:flex-row flex-col justify-center items-center gap-5 ">
-        <div className="about-photo flex flex-col w-80 ">
-          <div className="w-full relative z-10 h-full flex justify-center ">
-            <Image src={me} width={''} height={''} className="w-64 md:w-[400px] shadow-md shadow-black" alt="" id="me" />
+        <div className="about-photo flex flex-col w-80 " >
+          <div className="w-full relative z-10 h-full flex justify-center rounded-full " style={{
+                background: 'repeating-radial-gradient(#fffad7, #477cd1ed 50px)'
+          }}>
+            <Image src={me} width={'400px'} height={'500px'} className="w-64 md:w-[500px]" alt="" id="me" />
           </div>
         </div>
 

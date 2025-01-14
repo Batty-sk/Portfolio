@@ -20,16 +20,16 @@ const Header = () => {
           setColor([0,'rgb(59 130 246)'])
           break
         case 1:
-          setColor([1,'orange'])
+          setColor([1,'#f9f7cd'])
           break
         case 2:
-          setColor([2,'#67e8ca'])
+          setColor([2,'indigo'])
           break;
         case 3:
-            setColor([3,'#f9f7cd'])
+            setColor([3,'yellow'])
             break;
         default:
-          setColor([3,'#f9f7cd'])
+          setColor([3,'yellow'])
       }
     }
 

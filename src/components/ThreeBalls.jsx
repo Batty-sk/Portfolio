@@ -12,7 +12,7 @@ export const Sphere = ({texture_name})=>{
         <mesh rotation={[3 , Math.PI, 3.2]} >
             <sphereGeometry args={[1.8,18,18]}/>
             
-            <meshPhongMaterial map={texture} color={'white'}  />
+            <meshPhongMaterial map={texture} color={'white'} />
         </mesh>
     )
 }

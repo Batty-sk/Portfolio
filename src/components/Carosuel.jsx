@@ -52,8 +52,8 @@ const Carosuel = ({next}) => {
               
             }}>
              <div className='relative w-full h-full flex flex-col md:gap-3 gap-0 justify-center items-center'>
-              <div className='md:w-56 md:h-[16rem] w-48 h-[16rem] block bg-zinc-200 '>
-                <Image src={x.image} alt={x.name} height={'100%'} width={'100%'}></Image>
+              <div className='md:w-56 md:h-[16rem] w-48 h-[16rem] block bg-zinc-200 overflow-hidden '>
+                <Image src={x.image} alt={x.name} className='object-scale-down'></Image>
               </div>
               <div className='md:p-3 flex justify-center items-center md:gap-2'>
                 <a href={x.github} target='_blank' className='w-fit h-fit transition-all duration-150 rounded-full hover:bg-zinc-300'>
