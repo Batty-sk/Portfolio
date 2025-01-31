@@ -1,32 +1,26 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-
-  basePath: "/Portfolio_",
-
   webpack: (config, { isServer }) => {
-    // Handle media files (mp3, wav) correctly
     config.module.rules.push({
       test: /\.(mp3|wav)$/,
       use: {
-        loader: "file-loader",
+        loader: 'file-loader',
         options: {
           // Simplified naming pattern
-          name: "static/media/[name].[hash].[ext]",
-          // Ensure proper path for client-side (GitHub Pages)
-          publicPath: "/_next",
-          emitFile: !isServer, // Only emit files for client-side
+          name: 'static/media/[name].[hash].[ext]',
+          // Ensure proper path for client-side
+          publicPath: '/_next',
+          // Only emit files when building for client
+          emitFile: !isServer,
         },
       },
     });
 
     return config;
   },
-
-  // Performance optimizations
+  // Add some performance optimizations
   poweredByHeader: false,
   reactStrictMode: true,
-
   // Increase build timeout if needed
   staticPageGenerationTimeout: 180,
 };
